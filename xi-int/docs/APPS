@@ -1,0 +1,13 @@
+lighttpd
+========
+
+CVE-2011-4362
+
+http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2011_01.txt
+
+openssh
+=======
+
+4 patches applied, though nothing serious.
+
+http://hg.mindrot.org/openssh/rev/12ee78c65e0c

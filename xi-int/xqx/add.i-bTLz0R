@@ -1,0 +1,28 @@
+# 1 "add.c"
+# 1 "add.c" 1
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 150 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "/tmp/llvm_AK2jCV:trap.h" 1
+
+char __trap_annotate_i8(char, const char *) __attribute__((pure));
+short __trap_annotate_i16(short, const char *) __attribute__((pure));
+int __trap_annotate_i32(int, const char *) __attribute__((pure));
+long int __trap_annotate_i64(long int, const char *) __attribute__((pure));
+# 2 "<command line>" 2
+# 1 "<built-in>" 2
+# 1 "add.c" 2
+int adds32(int x, int y)
+{
+
+
+ return x + y;
+}
+
+unsigned long long addu64(unsigned long long x, unsigned long long y)
+{
+
+
+ return x + y;
+}

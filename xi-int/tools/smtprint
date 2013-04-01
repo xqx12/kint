@@ -1,0 +1,76 @@
+#!/usr/bin/env python
+import json
+import os
+import re
+import sys
+from cStringIO import StringIO
+
+def slex(fp):
+	for line in fp:
+		for s in re.split(r"([\(\)])", line):
+			for token in re.split(r"\s", s):
+				if token:
+					yield token
+
+def sparse(fp):
+	stack = []
+	for token in slex(fp):
+		if token == '(':
+			stack.append([])
+		elif token == ')':
+			top = stack.pop()
+			if stack:
+				stack[-1].append(top)
+			else:
+				yield top
+		else:
+			stack[-1].append(token)
+	assert not stack
+
+def sprint(fp, e, indent = 0, width = 4):
+	if type(e) is not list:
+		return fp.write(e)
+	fp.write("(")
+	if e:
+		fp.write("\x1b[1m")
+		sprint(fp, e[0], indent, width)
+		fp.write("\x1b[m")
+	if len(e) > 1:
+		subs = []
+		indent += width
+		for sub in e[1:]:
+			output = StringIO()
+			sprint(output, sub, indent, width)
+			subs.append(output.getvalue())
+		if indent + sum([len(x) for x in subs]) + len(subs) - 1 > 80:
+			sep = '\n' + ' ' * indent
+		else:
+			sep = ' '
+		indent -= width
+		for s in subs:
+			fp.writelines((sep, s))
+	fp.write(")")
+
+def main():
+	if len(sys.argv) < 2:
+		sys.stderr.write("Usage: smtprint JSON [lineno]\n")
+		return
+	lines = sys.argv[2:]
+	for item in json.load(open(sys.argv[1]))["items"]:
+		if lines and item["line"] not in lines:
+			continue
+		if "query" not in item:
+			continue
+		print "%(file)s:%(line)s\t%(trap)s" % item
+		print "=" * 70
+		if "model" in item:
+			print item["model"],
+			print "=" * 70
+		query = item["query"]
+		for e in sparse(query.split("\n")):
+			sprint(sys.stdout, e)
+			sys.stdout.write('\n')
+		print
+
+if __name__ == "__main__":
+	main()

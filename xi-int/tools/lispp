@@ -1,0 +1,103 @@
+#!/usr/bin/env python
+import json
+import os
+import re
+import sys
+from cStringIO import StringIO
+
+def slex(fp):
+	for line in fp:
+		for s in re.split(r"([\(\)])", line):
+			for token in re.split(r"\s", s):
+				if token:
+					yield token
+
+def sparse(fp):
+	stack = []
+	for token in slex(fp):
+		if token == '(':
+			stack.append([])
+		elif token == ')':
+			top = stack.pop()
+			if stack:
+				stack[-1].append(top)
+			else:
+				yield top
+		else:
+			if stack:
+				stack[-1].append(token)
+			else:
+				yield token
+	assert not stack
+
+def sprint(fp, e, indent = 0, width = 4):
+	if type(e) is not list:
+		return fp.write(e)
+	fp.write("(")
+	if e:
+		#fp.write("\x1b[1m")
+		sprint(fp, e[0], indent, width)
+		#fp.write("\x1b[m")
+	if len(e) > 1:
+		subs = []
+		indent += width
+		for sub in e[1:]:
+			output = StringIO()
+			sprint(output, sub, indent, width)
+			subs.append(output.getvalue())
+		if indent + sum([len(x) for x in subs]) + len(subs) - 1 > 80:
+			sep = '\n' + ' ' * indent
+		else:
+			sep = ' '
+		indent -= width
+		for s in subs:
+			fp.writelines((sep, s))
+	fp.write(")")
+
+def jprint(dat):
+	for i in dat["items"]:
+		m = re.search('linux-3\.[^/]*/(.*)', i["file"]);
+		if m:
+			i["file"] = m.group(1);
+		print "=" * 70
+		print "FUNC: %(function)s :: %(block)s" %i
+		print "FILE: %(file)s:%(line)s" % i
+		print "TRAP: %(trap)s\t%(status)s" % i
+		print "=" * 70
+		if "model" in i:
+			print "model:"
+			for line in i["model"].split("\n"):
+				print " ", line
+			print
+		if "guard" in i:
+			print "guard:"
+			for e in sparse(i["guard"].split("\n")):
+				print "  ",
+				sprint(sys.stdout, e, 2)
+				sys.stdout.write('\n')
+			print
+		if "assumption" in i:
+			print "assumption:"
+			for line in i["assumption"].split("\n"):
+				print " ", line
+			print
+		if "query" in i:
+			print "query:"
+			for line in i["query"].split("\n"):
+				print " ", line
+			print
+		print
+
+def main():
+	if len(sys.argv) == 2:
+		dat = json.load(open(sys.argv[1]))
+		jprint(dat)
+	else:
+		s = sys.stdin.read()
+		for e in sparse(s.split("\n")):
+			sprint(sys.stdout, e)
+			sys.stdout.write('\n')
+		print
+
+if __name__ == "__main__":
+	main()

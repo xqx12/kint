@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gdb --args /home/xqx/llvm/build/Release+Debug+Asserts/bin/clang -Xclang -load -Xclang '/home/xqx/kint/xi-int/tools/../src/.libs/libcint.so.0' -Xclang -plugin -Xclang int -no-integrated-as -fsyntax-only  $@

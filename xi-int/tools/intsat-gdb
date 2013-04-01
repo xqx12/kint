@@ -1,0 +1,2 @@
+#!/bin/bash
+gdb --args opt --disable-output -load='/home/xqx/kint/xi-int/tools/../src/.libs/libintsat.so.0' -trap-sat $@

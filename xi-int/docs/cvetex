@@ -1,0 +1,70 @@
+#!/usr/bin/env python
+
+import json
+import subprocess
+import sys
+from pprint import pprint
+
+def texop(x):
+	return {
+		"sadd": r"$+_s$",
+		"uadd": r"$+_u$",
+		"ssub": r"$-_s$",
+		"usub": r"$-_u$",
+		"smul": r"$\times_s$",
+		"umul": r"$\times_u$",
+		"sdiv": r"$/_s$",
+		"udiv": r"$/_u$",
+		"shl":  r"$\shl$",
+		"shr":  r"$\shr$",
+	}.get(x, x)
+
+classes = {}
+items = json.load(sys.stdin)["items"]
+
+for item in items:
+	if "files" not in item:
+		continue
+	paths = item["files"][0].split('/')
+	if paths[0] == "drivers":
+		dir = "/".join(paths[0:2])
+	else:
+		dir = paths[0]
+	classes.setdefault(dir, []).append(item)
+
+print r"\begin{tabular}{lllllll} \toprule"
+print r" & \multirow{2}{*}{Component} & \multirow{2}{*}{Error}"
+print r"   & \multicolumn{2}{c}{Architecture}"
+print r"    & \multirow{2}{*}{Caught in original} & \multirow{2}{*}{Cleared in patch} \\ \cmidrule{4-5}"
+print r" &           &       & 32 & 64 & \\ \midrule"
+
+for key in sorted(classes.keys()):
+	print r"\cc{%s} \\" % (key,)
+	for item in sorted(classes[key], key = lambda item: (item["label"]), reverse=True):
+		id = item["label"]
+		if int(id.split('-')[1]) < 2008:
+			continue
+		if "trap" not in item:
+			pprint(item, sys.stderr)
+			assert False
+		op = ", ".join(sorted([texop(x) for x in item["trap"]]))
+		if "32" in item["arch"]:
+			arch32 = r"\checked"
+		else:
+			arch32 = ""
+		if "64" in item["arch"]:
+			arch64 = r"\checked"
+		else:
+			arch64 = ""
+		p = subprocess.Popen(["./subsys", item["files"][0]], stdout=subprocess.PIPE)
+		subsys = p.communicate()[0]
+		neg = item.get("xfail", r"\ok")
+		pos = item.get("yfail", r"\ok")
+		if not neg and pos:
+			neg = r"\ok"
+		if neg and not pos:
+			pos = "N/A"
+		print r"\hspace{1em} %s & %s & %s & %s & %s & %s & %s \\" % (id, subsys, op, arch32, arch64, neg, pos)
+
+print r"\bottomrule"
+print r"\end{tabular}"

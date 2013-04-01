@@ -1,0 +1,31 @@
+#!/bin/bash
+# 
+# dlname -- extract shared library name from .la
+#
+# This scripts extracts the actual name of the shared object
+# from the .la file.
+
+E_ARGS=65
+E_FILE=66
+
+if [ $# -ne 1 ]; then
+	echo "usage: `basename $0` filename" >&2
+	exit $E_ARGS
+fi
+
+# extract the actual name
+# installed:
+#   yes -- libdir
+#    no -- .libs
+base=`sed -n "s/^dlname='\([^']*\)'\$/\1/p" "$1" 2> /dev/null`
+installed=`sed -n "s/^installed=\([a-z]*\)\$/\1/p" "$1" 2> /dev/null`
+if [ "x$installed" == "xyes" ]; then
+	dir=`sed -n "s/^libdir='\([^']*\)'\$/\1/p" "$1" 2> /dev/null`
+elif [ "x$installed" == "xno" ]; then
+	dir="`dirname "$1"`/.libs"
+else
+	echo "Bad .la file" >&2
+	exit $E_FILE
+fi
+
+echo "$dir/$base"

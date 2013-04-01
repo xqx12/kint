@@ -1,0 +1,28 @@
+AM_CXXFLAGS = `llvm-config --cxxflags` -Werror -Wall -Wno-unknown-pragmas -fno-strict-aliasing
+
+bin_PROGRAMS = cintld
+lib_LTLIBRARIES = libcint.la libintsat.la libintmatch.la libsysctlrange.la
+
+libcint_la_SOURCES = IntAction.cc \
+	RewriteAction.cc AnnotateAction.cc \
+	LowerAnnotation.cc Overflow.cc \
+	TrapAliasAnalysis.cc TrapGen.cc TrapLinux.cc TrapSimplify.cc TrapLoop.cc \
+	LowerOverflow.cc Hoist.cc \
+	IntermediateFile.cc
+
+#libcint_la_CPPFLAGS = -I$(top_builddir)/llvm/include -I$(top_builddir)/build/include -I$(top_builddir)/lib
+
+libintsat_la_CPPFLAGS = -I$(top_builddir)/llvm/include -I$(top_builddir)/build/include -I$(top_builddir)/lib 
+libintsat_la_SOURCES  = TrapLib.cc TrapSat.cc TrapSatMP.cc
+libintsat_la_LDFLAGS  = -L$(top_builddir)/lib -R '$(abs_top_builddir)/lib'
+libintsat_la_LIBADD   = $(SMT_LIBADD)
+
+libintmatch_la_SOURCES = TautologicalCompare.cc
+
+libsysctlrange_la_SOURCES = SysctlRange.cc
+
+#libintrange_la_SOURCES = CallInfo.cc RangeInfo.cc
+
+cintld_LDFLAGS = `llvm-config --ldflags` -lLLVM-`llvm-config --version`
+cintld_SOURCES = Linker.cc CallInfo.cc RangeInfo.cc TaintInfo.cc
+

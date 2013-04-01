@@ -1,0 +1,1037 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AA	Hoist.cc	/^	llvm::AliasAnalysis *AA;$/;"	m	class:__anon1::Hoist	file:
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/xqx\/kint\/xi-int\/build-aux\/missing --run aclocal-1.11$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/home\/xqx\/kint\/xi-int\/build-aux\/missing --run tar$/;"	m
+AM_CXXFLAGS	Makefile	/^AM_CXXFLAGS = `llvm-config --cxxflags` -Werror -Wall -Wno-unknown-pragmas -fno-strict-aliasing$/;"	m
+AM_DEFAULT_VERBOSITY	Makefile	/^AM_DEFAULT_VERBOSITY = 0$/;"	m
+AM_V_CXX	Makefile	/^AM_V_CXX = $(am__v_CXX_$(V))$/;"	m
+AM_V_CXXLD	Makefile	/^AM_V_CXXLD = $(am__v_CXXLD_$(V))$/;"	m
+AM_V_GEN	Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_at	Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_lt	Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m
+ANNOTATION_LINE_LEN	VRMap.h	11;"	d
+APIntCmp	RangeAnalysis.cc	/^    struct APIntCmp {$/;"	s	struct:__anon9::RangeAnalysis	file:
+AR	Makefile	/^AR = ar$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/xqx\/kint\/xi-int\/build-aux\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/xqx\/kint\/xi-int\/build-aux\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/xqx\/kint\/xi-int\/build-aux\/missing --run automake-1.11$/;"	m
+AWK	Makefile	/^AWK = mawk$/;"	m
+Allocs	TrapLinux.cc	/^static Param Allocs[] = {$/;"	m	namespace:__anon25	file:
+AnnotateAction	AnnotateAction.h	/^	AnnotateAction(clang::BackendAction Act, llvm::LLVMContext *VMCtx = 0)$/;"	f	class:AnnotateAction
+AnnotateAction	AnnotateAction.h	/^class AnnotateAction : public clang::CodeGenAction {$/;"	c
+AnnotateConsumer	AnnotateAction.cc	/^	AnnotateConsumer(StructList &sl)$/;"	f	class:__anon6::AnnotateConsumer
+AnnotateConsumer	AnnotateAction.cc	/^class AnnotateConsumer : public clang::ASTConsumer {$/;"	c	namespace:__anon6	file:
+AnnotationExp	AnnotationManager.h	/^struct AnnotationExp {$/;"	s
+AnnotationExpValue	AnnotationManager.h	/^struct AnnotationExpValue {$/;"	s
+AnnotationGrammar	AnnotationManager.cc	/^	AnnotationGrammar() : AnnotationGrammar::base_type(AnnotationR) {$/;"	f	struct:__anon15::AnnotationGrammar
+AnnotationGrammar	AnnotationManager.cc	/^struct AnnotationGrammar : qi::grammar<std::string::iterator, AnnotationRule(), ascii::space_type> {$/;"	s	namespace:__anon15	file:
+AnnotationManager	AnnotationManager.cc	/^AnnotationManager::AnnotationManager(const char* FileName) {$/;"	f	class:AnnotationManager
+AnnotationManager	AnnotationManager.h	/^class AnnotationManager {$/;"	c
+AnnotationR	AnnotationManager.cc	/^	qi::rule<std::string::iterator, AnnotationRule(), ascii::space_type> AnnotationR;$/;"	m	struct:__anon15::AnnotationGrammar	file:
+AnnotationRule	AnnotationManager.cc	/^struct AnnotationRule {$/;"	s	file:
+AnnotationTerm	AnnotationManager.h	/^typedef std::vector<AnnotationExpValue> AnnotationTerm;$/;"	t
+Arg2Anno	TrapAliasAnalysis.cc	/^	ArgAnnoMap Arg2Anno;$/;"	m	struct:__anon16::TrapAliasAnalysis	file:
+ArgAnnoMap	TrapAliasAnalysis.cc	/^	typedef llvm::DenseMap<const llvm::Argument *, llvm::StringSet<> > ArgAnnoMap;$/;"	t	struct:__anon16::TrapAliasAnalysis	file:
+ArgumentKind	AnnotationManager.h	/^		ArgumentKind = 0,$/;"	e	enum:AnnotationExpValue::__anon5
+BBPGraph	RangeWorkList.h	/^    BBPropagationGraphTy BBPGraph;$/;"	m	class:RangeWorkList
+BBPropagationGraphTy	RangeWorkList.h	/^    typedef std::map<llvm::BasicBlock*, PropagationListTy> BBPropagationGraphTy;$/;"	t	class:RangeWorkList
+BBSet	Hoist.cc	/^	typedef llvm::SmallPtrSet<llvm::BasicBlock *, 32> BBSet;$/;"	t	class:__anon1::Hoist	file:
+BEGIN_EXTERN	TrapLib.cc	63;"	d	file:
+BEGIN_FUNC	TrapLib.cc	74;"	d	file:
+BEGIN_LOAD	TrapLib.cc	85;"	d	file:
+BackEdges	RangeInfo.h	/^	EdgeList BackEdges;$/;"	m	class:RangeInfo
+BackEdges	TrapSat.cc	/^	llvm::SmallVector<Edge, 16> BackEdges;$/;"	m	struct:__anon17::TrapSat	file:
+BoolectorSolver	SMTSolver.h	/^	BoolectorSolver() {$/;"	f	class:BoolectorSolver
+BoolectorSolver	SMTSolver.h	/^class BoolectorSolver {$/;"	c
+C	RewriteAction.cc	/^	clang::ASTContext &C;$/;"	m	class:__anon19::RewriteVisitor	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CSList	Linker.h	/^typedef llvm::SmallVector<llvm::CallSite, 16> CSList;$/;"	t
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CURL	Makefile	/^CURL = wget -O -$/;"	m
+CXX	Makefile	/^CXX = g++$/;"	m
+CXXCOMPILE	Makefile	/^CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \\$/;"	m
+CXXCPP	Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXLD	Makefile	/^CXXLD = $(CXX)$/;"	m
+CXXLINK	Makefile	/^CXXLINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \\$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+CallInfo	CallInfo.h	/^	CallInfo(LinkerContext *Ctx) : LinkerCtx(Ctx) { }$/;"	f	class:CallInfo
+CallInfo	CallInfo.h	/^class CallInfo {$/;"	c
+CalleeMap	Linker.h	/^typedef llvm::DenseMap<llvm::CallInst *, FuncSet> CalleeMap;$/;"	t
+Callees	Linker.h	/^	CalleeMap Callees;$/;"	m	struct:LinkerContext
+CallerMap	Linker.h	/^typedef llvm::DenseMap<llvm::Function *, CSList> CallerMap;$/;"	t
+Callers	Linker.h	/^	CallerMap Callers;$/;"	m	struct:LinkerContext
+ChangeSet	RangeInfo.h	/^	typedef std::set<std::string> ChangeSet;$/;"	t	class:RangeInfo
+Changes	RangeInfo.h	/^	ChangeSet Changes;$/;"	m	class:RangeInfo
+Cond	TrapLib.cc	/^	SMTExpr Cond = SMT.bvuge(offset, size);$/;"	v
+Constraint	TrapLib.h	/^class Constraint {$/;"	c
+ConstraintRegistry	TrapLib.h	/^typedef llvm::Registry<Constraint> ConstraintRegistry;$/;"	t
+Constraints	TrapLib.h	/^	llvm::DenseMap<llvm::Value *, Constraint *> Constraints;$/;"	m	class:TrapLib
+CreateASTConsumer	AnnotateAction.cc	/^AnnotateAction::CreateASTConsumer(clang::CompilerInstance &CI,$/;"	f	class:AnnotateAction
+CreateASTConsumer	IntAction.cc	/^	virtual clang::ASTConsumer *CreateASTConsumer($/;"	f	class:__anon2::IntAction
+CreateASTConsumer	RewriteAction.cc	/^RewriteAction::CreateASTConsumer(clang::CompilerInstance &, llvm::StringRef) {$/;"	f	class:RewriteAction
+D	AnnotationManager.h	/^	long long D;$/;"	m	struct:AnnotationExpValue
+DEBUG_TYPE	CallInfo.cc	1;"	d	file:
+DEBUG_TYPE	GEPUnroll.cc	1;"	d	file:
+DEBUG_TYPE	Hoist.cc	1;"	d	file:
+DEBUG_TYPE	LowerAnnotation.cc	1;"	d	file:
+DEBUG_TYPE	LowerOverflow.cc	1;"	d	file:
+DEBUG_TYPE	Overflow.cc	1;"	d	file:
+DEBUG_TYPE	PHICombine.cc	1;"	d	file:
+DEBUG_TYPE	RangeInfo.cc	1;"	d	file:
+DEBUG_TYPE	SPConstantProp.cc	1;"	d	file:
+DEBUG_TYPE	TautologicalCompare.cc	1;"	d	file:
+DEBUG_TYPE	TrapAliasAnalysis.cc	1;"	d	file:
+DEBUG_TYPE	TrapCombine.cc	1;"	d	file:
+DEBUG_TYPE	TrapGen.cc	1;"	d	file:
+DEBUG_TYPE	TrapLinux.cc	1;"	d	file:
+DEBUG_TYPE	TrapLoop.cc	1;"	d	file:
+DEBUG_TYPE	TrapSat.cc	1;"	d	file:
+DEBUG_TYPE	TrapSatMP.cc	1;"	d	file:
+DEBUG_TYPE	TrapSimplify.cc	1;"	d	file:
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFINE_TYPE	SMTSolver.h	350;"	d
+DEFINE_VOID	SMTSolver.h	351;"	d
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(libcint_la_SOURCES) $(libintmatch_la_SOURCES) \\$/;"	m
+DSYMUTIL	Makefile	/^DSYMUTIL = $/;"	m
+DT	Hoist.cc	/^	llvm::DominatorTree *DT;$/;"	m	class:__anon1::Hoist	file:
+DUMPBIN	Makefile	/^DUMPBIN = $/;"	m
+Dict	TrapSat.cc	/^	typedef std::map<std::string, std::string> Dict;$/;"	t	struct:__anon17::TrapSat	file:
+E	TrapLib.cc	/^	SMTExpr E = SMT.bvsge(dev, zero);$/;"	v
+E	TrapLib.cc	/^	SMTExpr E = SMT.bvsgt(tail, zero);$/;"	v
+E	TrapLib.cc	/^	SMTExpr E = SMT.bvugt(s_blocksize, zero);$/;"	v
+E	TrapLib.cc	/^	SMTExpr E = SMT.bvult(next_to_clean, count);$/;"	v
+E	TrapLib.cc	/^	SMTExpr E = SMT.bvult(next_to_use, count);$/;"	v
+E	TrapLib.cc	/^	SMTExpr E = SMT.eq(min_frame_size, min_ethernet_frame_size);$/;"	v
+E	TrapLib.cc	/^	SMTExpr E = SMT.ite(Cond, Unlikely, Likely);$/;"	v
+E	TrapLib.cc	/^	SMTExpr E = SMT.land(Hi, Lo);$/;"	v
+E	TrapLib.cc	/^	SMTExpr E = SMT.ltrue();$/;"	v
+E	TrapLib.cc	/^	SMTExpr E;$/;"	v
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+END_EXTERN	TrapLib.cc	70;"	d	file:
+END_FUNC	TrapLib.cc	81;"	d	file:
+END_LOAD	TrapLib.cc	92;"	d	file:
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+Edge	RangeInfo.h	/^	typedef std::pair<const llvm::BasicBlock *, const llvm::BasicBlock *> Edge;$/;"	t	class:RangeInfo
+Edge	TrapSat.cc	/^	> Edge;$/;"	t	struct:__anon17::TrapSat	file:
+EdgeList	RangeInfo.h	/^	typedef llvm::SmallVector<Edge, 16> EdgeList;$/;"	t	class:RangeInfo
+ExecuteAction	IntAction.cc	/^	virtual void ExecuteAction() {$/;"	f	class:__anon2::PreprocessAction
+ExpR	AnnotationManager.cc	/^	qi::rule<std::string::iterator, AnnotationExp(), ascii::space_type> ExpR;$/;"	m	struct:__anon15::AnnotationGrammar	file:
+ExpValueKind	AnnotationManager.h	/^	} ExpValueKind;$/;"	t	struct:AnnotationExpValue	typeref:enum:AnnotationExpValue::__anon5
+ExpandThreshold	RangeAnalysis.cc	/^    unsigned int ExpandThreshold;$/;"	m	struct:__anon9::RangeAnalysis	file:
+FGREP	Makefile	/^FGREP = \/bin\/grep -F$/;"	m
+FID	Linker.h	/^	FIDMap FID;$/;"	m	struct:LinkerContext
+FIDMap	Linker.h	/^typedef std::map<std::string, std::vector<std::string> > FIDMap;$/;"	t
+Filename	IntermediateFile.h	/^	std::string Filename;$/;"	m	class:IntermediateFile
+Func	AnnotationManager.h	/^	FuncMapTy Func;$/;"	m	class:AnnotationManager
+FuncMap	Linker.h	/^typedef std::map<std::string, llvm::Function *> FuncMap;$/;"	t
+FuncMapTy	AnnotationManager.h	/^	typedef std::map<std::string, std::pair<AnnotationExp, AnnotationExp> > FuncMapTy;$/;"	t	class:AnnotationManager
+FuncPtrMap	Linker.h	/^typedef std::map<std::string, FuncSet> FuncPtrMap;$/;"	t
+FuncPtrs	Linker.h	/^	FuncPtrMap FuncPtrs;$/;"	m	struct:LinkerContext
+FuncSet	Linker.h	/^typedef llvm::SmallPtrSet<llvm::Function *, 8> FuncSet;$/;"	t
+FuncVRMs	RangeInfo.h	/^	FuncValueRangeMaps FuncVRMs;$/;"	m	class:RangeInfo
+FuncValueRangeMaps	RangeInfo.h	/^	typedef std::map<llvm::BasicBlock *, ValueRangeMap> FuncValueRangeMaps;$/;"	t	class:RangeInfo
+FunctionDeclCache	RewriteAction.cc	/^	llvm::StringMap<clang::FunctionDecl *> FunctionDeclCache;$/;"	m	class:__anon19::RewriteVisitor	file:
+GEPSet	GEPUnroll.cc	/^	typedef llvm::SmallPtrSet<llvm::GetElementPtrInst *, 16> GEPSet;$/;"	t	struct:__anon3::GEPUnroll	file:
+GEPUnroll	GEPUnroll.cc	/^	GEPUnroll() : llvm::FunctionPass(ID) { }$/;"	f	struct:__anon3::GEPUnroll
+GEPUnroll	GEPUnroll.cc	/^struct GEPUnroll : llvm::FunctionPass {$/;"	s	namespace:__anon3	file:
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+Global	AnnotationManager.h	/^	GlobalMapTy Global;$/;"	m	class:AnnotationManager
+Global	ValueNode.h	/^        Global$/;"	e	enum:ValueNode::ValueKindTy
+GlobalFuncs	Linker.h	/^	FuncMap GlobalFuncs;$/;"	m	struct:LinkerContext
+GlobalMapTy	AnnotationManager.h	/^	typedef std::map<std::string, std::pair<long long, long long> > GlobalMapTy;$/;"	t	class:AnnotationManager
+GlobalThreshold	RangeAnalysis.cc	/^    unsigned int GlobalThreshold;$/;"	m	struct:__anon9::RangeAnalysis	file:
+GuardCache	TrapSat.cc	/^	GuardMap GuardCache;$/;"	m	struct:__anon17::TrapSat	file:
+GuardMap	TrapSat.cc	/^	typedef llvm::DenseMap<llvm::BasicBlock *, SMTExpr> GuardMap;$/;"	t	struct:__anon17::TrapSat	file:
+HandleTagDeclDefinition	AnnotateAction.cc	/^	virtual void HandleTagDeclDefinition(clang::TagDecl *D) {$/;"	f	class:__anon6::AnnotateConsumer
+HandleTopLevelDecl	AnnotateAction.cc	/^	virtual bool HandleTopLevelDecl(clang::DeclGroupRef D) {$/;"	f	class:__anon6::AnnotateConsumer
+HandleTranslationUnit	RewriteAction.cc	/^	virtual void HandleTranslationUnit(clang::ASTContext &C) {$/;"	f	class:__anon19::RewriteConsumer
+Hi	TrapLib.cc	/^	SMTExpr Hi = SMT.bvule(max_frame_size, max_jumbo_frame_size);$/;"	v
+Hi	TrapLib.cc	/^	SMTExpr Lo = SMT.bvuge(ret, offset), Hi = SMT.bvule(ret, size);$/;"	v
+Hoist	Hoist.cc	/^	Hoist() : llvm::FunctionPass(ID) {$/;"	f	class:__anon1::Hoist
+Hoist	Hoist.cc	/^class Hoist : public llvm::FunctionPass {$/;"	c	namespace:__anon1	file:
+ID	GEPUnroll.cc	/^	static char ID;$/;"	m	struct:__anon3::GEPUnroll	file:
+ID	GEPUnroll.cc	/^char GEPUnroll::ID;$/;"	m	class:GEPUnroll	file:
+ID	Hoist.cc	/^	static char ID;$/;"	m	class:__anon1::Hoist	file:
+ID	Hoist.cc	/^char Hoist::ID;$/;"	m	class:Hoist	file:
+ID	LowerAnnotation.cc	/^	static char ID;$/;"	m	struct:__anon12::LowerAnnotation	file:
+ID	LowerAnnotation.cc	/^char LowerAnnotation::ID;$/;"	m	class:LowerAnnotation	file:
+ID	LowerOverflow.cc	/^	static char ID;$/;"	m	struct:__anon11::LowerOverflow	file:
+ID	LowerOverflow.cc	/^char LowerOverflow::ID;$/;"	m	class:LowerOverflow	file:
+ID	Overflow.cc	/^	static char ID;$/;"	m	struct:__anon4::Overflow	file:
+ID	Overflow.cc	/^char Overflow::ID;$/;"	m	class:Overflow	file:
+ID	PHICombine.cc	/^	static char ID;$/;"	m	struct:__anon10::PHICombine	file:
+ID	PHICombine.cc	/^char PHICombine::ID;$/;"	m	class:PHICombine	file:
+ID	RangeAnalysis.cc	/^    static char ID;$/;"	m	struct:__anon9::RangeAnalysis	file:
+ID	RangeAnalysis.cc	/^char RangeAnalysis::ID;$/;"	m	class:RangeAnalysis	file:
+ID	SPConstantProp.cc	/^	static char ID;$/;"	m	struct:__anon24::SPConstProp	file:
+ID	SPConstantProp.cc	/^char SPConstProp::ID;$/;"	m	class:SPConstProp	file:
+ID	SysctlRange.cc	/^	static char ID;$/;"	m	struct:__anon13::SysctlRange	file:
+ID	SysctlRange.cc	/^char SysctlRange::ID;$/;"	m	class:SysctlRange	file:
+ID	TautologicalCompare.cc	/^	static char ID;$/;"	m	struct:__anon7::TautologicalCompare	file:
+ID	TautologicalCompare.cc	/^char TautologicalCompare::ID;$/;"	m	class:TautologicalCompare	file:
+ID	TrapAliasAnalysis.cc	/^	static char ID;$/;"	m	struct:__anon16::TrapAliasAnalysis	file:
+ID	TrapAliasAnalysis.cc	/^char TrapAliasAnalysis::ID;$/;"	m	class:TrapAliasAnalysis	file:
+ID	TrapCombine.cc	/^	static char ID;$/;"	m	struct:__anon18::TrapCombine	file:
+ID	TrapCombine.cc	/^char TrapCombine::ID;$/;"	m	class:TrapCombine	file:
+ID	TrapGen.cc	/^	static char ID;$/;"	m	struct:TrapGen	file:
+ID	TrapGen.cc	/^char TrapGen::ID;$/;"	m	class:TrapGen	file:
+ID	TrapLinux.cc	/^	static char ID;$/;"	m	class:__anon25::TrapLinux	file:
+ID	TrapLinux.cc	/^char TrapLinux::ID;$/;"	m	class:TrapLinux	file:
+ID	TrapLoop.cc	/^	static char ID;$/;"	m	struct:__anon23::TrapLoop	file:
+ID	TrapLoop.cc	/^char TrapLoop::ID;$/;"	m	class:TrapLoop	file:
+ID	TrapSat.cc	/^	static char ID;$/;"	m	struct:__anon17::TrapSat	file:
+ID	TrapSat.cc	/^char TrapSat::ID;$/;"	m	class:TrapSat	file:
+ID	TrapSatMP.cc	/^	static char ID;$/;"	m	struct:__anon22::TrapSatMP	file:
+ID	TrapSatMP.cc	/^char TrapSatMP::ID;$/;"	m	class:TrapSatMP	file:
+ID	TrapSimplify.cc	/^	static char ID;$/;"	m	struct:__anon20::TrapSimplify	file:
+ID	TrapSimplify.cc	/^char TrapSimplify::ID;$/;"	m	class:TrapSimplify	file:
+ID	VRGraph.cc	/^char VRGraph::ID;$/;"	m	class:VRGraph	file:
+ID	VRGraph.h	/^    static char ID;    $/;"	m	struct:VRGraph
+IDStr	ValueNode.h	/^        char IDStr[NAMESTR_LEN];$/;"	m	union:ValueNode::__anon8
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+Indent	JSONWriter.h	/^	unsigned Indent;$/;"	m	class:JSONWriter
+Index	TrapLinux.cc	/^	unsigned Index;$/;"	m	struct:__anon25::Param	file:
+IndexRangeMap	GEPUnroll.cc	/^	typedef llvm::DenseMap<llvm::Use *, llvm::ConstantRange> IndexRangeMap;$/;"	t	struct:__anon3::GEPUnroll	file:
+IndexRanges	GEPUnroll.cc	/^	IndexRangeMap IndexRanges;$/;"	m	struct:__anon3::GEPUnroll	file:
+InitializeGraph	RangeAnalysis.cc	/^    void InitializeGraph(llvm::Module &M) {$/;"	f	struct:__anon9::RangeAnalysis	file:
+IntAction	IntAction.cc	/^class IntAction : public clang::PluginASTAction {$/;"	c	namespace:__anon2	file:
+IntKind	AnnotationManager.h	/^		IntKind$/;"	e	enum:AnnotationExpValue::__anon5
+IntRange	IntRange.h	/^    IntRange(const llvm::APInt &Lower, const llvm::APInt &Upper) : llvm::ConstantRange(Lower, Upper) {}$/;"	f	class:IntRange
+IntRange	IntRange.h	/^    IntRange(const llvm::APInt &V) : llvm::ConstantRange(V) {}$/;"	f	class:IntRange
+IntRange	IntRange.h	/^    IntRange(const llvm::ConstantRange &CR) : llvm::ConstantRange(CR) {}$/;"	f	class:IntRange
+IntRange	IntRange.h	/^    IntRange(uint32_t BitWidth, bool isFullSet = false) : llvm::ConstantRange(BitWidth, isFullSet)  {}$/;"	f	class:IntRange
+IntRange	IntRange.h	/^class IntRange : public llvm::ConstantRange {$/;"	c
+IntRangeMap	Linker.h	/^typedef std::map<std::string, llvm::ConstantRange> IntRangeMap;$/;"	t
+IntRanges	Linker.h	/^	IntRangeMap IntRanges;$/;"	m	struct:LinkerContext
+IntermediateFile	IntermediateFile.cc	/^IntermediateFile::IntermediateFile(llvm::StringRef InFile, llvm::StringRef Extension, bool Binary) {$/;"	f	class:IntermediateFile
+IntermediateFile	IntermediateFile.h	/^class IntermediateFile {$/;"	c
+Invariant	TrapSat.cc	/^	SMTExpr Invariant;$/;"	m	struct:__anon17::TrapSat	file:
+JSONWriter	JSONWriter.h	/^	JSONWriter(llvm::raw_ostream &OS, unsigned Indent = 0)$/;"	f	class:JSONWriter
+JSONWriter	JSONWriter.h	/^class JSONWriter {$/;"	c
+Kind	AnnotationManager.cc	/^	RuleKind Kind;$/;"	m	struct:AnnotationRule	file:
+Kind	AnnotationManager.h	/^	ExpValueKind Kind;$/;"	m	struct:AnnotationExpValue
+Kind	ValueNode.h	/^    ValueKindTy Kind;$/;"	m	struct:ValueNode
+LC	TrapSat.cc	/^	llvm::OwningPtr<LinkerContext> LC;$/;"	m	struct:__anon17::TrapSat	file:
+LD	Makefile	/^LD = \/usr\/bin\/ld -m elf_x86_64$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LI	TrapLoop.cc	/^	llvm::LoopInfo *LI;$/;"	m	struct:__anon23::TrapLoop	file:
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = -lz $/;"	m
+LIBTOOL	Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LIPO	Makefile	/^LIPO = $/;"	m
+LN_S	Makefile	/^LN_S = ln -s$/;"	m
+LTCXXCOMPILE	Makefile	/^LTCXXCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \\$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBRARIES	Makefile	/^LTLIBRARIES = $(lib_LTLIBRARIES)$/;"	m
+Likely	TrapLib.cc	/^	SMTExpr Likely = SMT.land(Lo, Hi);$/;"	v
+LinkerContext	Linker.h	/^struct LinkerContext {$/;"	s
+LinkerCtx	CallInfo.h	/^	LinkerContext *LinkerCtx;$/;"	m	class:CallInfo
+LinkerCtx	Linker.cc	/^LinkerContext LinkerCtx;$/;"	v
+LinkerCtx	RangeInfo.h	/^	LinkerContext *LinkerCtx;$/;"	m	class:RangeInfo
+LinkerCtx	TaintInfo.h	/^	LinkerContext *LinkerCtx;$/;"	m	class:TaintInfo
+Lo	TrapLib.cc	/^	SMTExpr Lo = SMT.bvuge(max_frame_size, min_ethernet_frame_size);$/;"	v
+Lo	TrapLib.cc	/^	SMTExpr Lo = SMT.bvuge(ret, offset), Hi = SMT.bvule(ret, size);$/;"	v
+LoadConstraints	TrapLib.h	/^	llvm::StringMap<Constraint *> LoadConstraints;$/;"	m	class:TrapLib
+Location	Hoist.cc	/^	typedef llvm::AliasAnalysis::Location Location;$/;"	t	class:__anon1::Hoist	file:
+LoopThreshold	RangeAnalysis.cc	/^    unsigned int LoopThreshold;$/;"	m	struct:__anon9::RangeAnalysis	file:
+LowerAnnotation	LowerAnnotation.cc	/^	LowerAnnotation() : llvm::FunctionPass(ID) { }$/;"	f	struct:__anon12::LowerAnnotation
+LowerAnnotation	LowerAnnotation.cc	/^struct LowerAnnotation : llvm::FunctionPass {$/;"	s	namespace:__anon12	file:
+LowerOverflow	LowerOverflow.cc	/^	LowerOverflow() : llvm::FunctionPass(ID) { }$/;"	f	struct:__anon11::LowerOverflow
+LowerOverflow	LowerOverflow.cc	/^struct LowerOverflow : llvm::FunctionPass {$/;"	s	namespace:__anon11	file:
+M	Overflow.cc	/^	llvm::Module *M;$/;"	m	struct:__anon4::Overflow	file:
+M	TrapSat.cc	/^	llvm::Module *M;$/;"	m	struct:__anon17::TrapSat	file:
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/xqx\/kint\/xi-int\/build-aux\/missing --run makeinfo$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+Map	VRMap.h	/^    MapTy Map;$/;"	m	class:VRMap
+MapTy	VRMap.h	/^    typedef std::map<ValueNode, IntRange> MapTy;$/;"	t	class:VRMap
+MaxIterations	RangeInfo.h	/^	const unsigned MaxIterations;	$/;"	m	class:RangeInfo
+Modules	Linker.cc	/^std::vector<llvm::Module *> Modules;$/;"	v
+NAMESTR_LEN	ValueNode.h	9;"	d
+NM	Makefile	/^NM = \/usr\/bin\/nm -B$/;"	m
+NMEDIT	Makefile	/^NMEDIT = $/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+Name	AnnotationManager.cc	/^	std::string Name;$/;"	m	struct:AnnotationRule	file:
+Name	TrapLinux.cc	/^	const char *Name;$/;"	m	struct:__anon25::Param	file:
+NameR	AnnotationManager.cc	/^	qi::rule<std::string::iterator, std::string(), ascii::space_type> NameR;$/;"	m	struct:__anon15::AnnotationGrammar	file:
+Normal	ValueNode.h	/^        Normal,$/;"	e	enum:ValueNode::ValueKindTy
+OBJDUMP	Makefile	/^OBJDUMP = objdump$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OS	IntAction.cc	/^	llvm::raw_ostream &OS;$/;"	m	class:__anon2::PreprocessAction	file:
+OS	JSONWriter.h	/^	llvm::raw_ostream &OS;$/;"	m	class:JSONWriter
+OS	RewriteAction.cc	/^	llvm::raw_ostream &OS;$/;"	m	class:__anon19::RewriteConsumer	file:
+OS	RewriteAction.h	/^	llvm::raw_ostream &OS;$/;"	m	class:RewriteAction
+OS	TautologicalCompare.cc	/^	llvm::raw_ostream &OS;$/;"	m	struct:__anon7::TautologicalCompare	file:
+OTOOL	Makefile	/^OTOOL = $/;"	m
+OTOOL64	Makefile	/^OTOOL64 = $/;"	m
+Open	RangeWorkList.h	/^    std::set<llvm::Value*> Open;$/;"	m	class:RangeWorkList
+OperateRange	RangeAnalysis.cc	/^IntRange OperateRange(int opcode, IntRange r1, IntRange r2) {$/;"	f	namespace:__anon9
+Out	IntermediateFile.h	/^	llvm::tool_output_file *Out;$/;"	m	class:IntermediateFile
+Overflow	Overflow.cc	/^	Overflow() : llvm::FunctionPass(ID) { }$/;"	f	struct:__anon4::Overflow
+Overflow	Overflow.cc	/^struct Overflow : llvm::FunctionPass {$/;"	s	namespace:__anon4	file:
+PACKAGE	Makefile	/^PACKAGE = int$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = xi@mit.edu$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = int$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = int 0.1$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = int$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 0.1$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PGraph	RangeWorkList.h	/^    PropagationGraphTy PGraph;$/;"	m	class:RangeWorkList
+PHICombine	PHICombine.cc	/^	PHICombine() : FunctionPass(ID) { }$/;"	f	struct:__anon10::PHICombine
+PHICombine	PHICombine.cc	/^struct PHICombine : llvm::FunctionPass {$/;"	s	namespace:__anon10	file:
+PHISet	GEPUnroll.cc	/^	typedef llvm::SmallPtrSet<llvm::PHINode *, 16> PHISet;$/;"	t	struct:__anon3::GEPUnroll	file:
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+Param	TrapLinux.cc	/^struct Param {$/;"	s	namespace:__anon25	file:
+ParseArgs	IntAction.cc	/^	virtual bool ParseArgs($/;"	f	class:__anon2::IntAction
+PathConstraints	RangeAnalysis.cc	/^    PathConstraintsTy PathConstraints;$/;"	m	struct:__anon9::RangeAnalysis	file:
+PathConstraintsTy	RangeAnalysis.cc	/^    typedef std::map<llvm::BasicBlock*, VRMap> PathConstraintsTy;$/;"	t	struct:__anon9::RangeAnalysis	file:
+PendingStructs	AnnotateAction.cc	/^	StructSet PendingStructs;$/;"	m	class:__anon6::AnnotateConsumer	file:
+PreprocessAction	IntAction.cc	/^	explicit PreprocessAction(llvm::raw_ostream &OS): OS(OS) { }$/;"	f	class:__anon2::PreprocessAction
+PreprocessAction	IntAction.cc	/^class PreprocessAction : public clang::PreprocessorFrontendAction {$/;"	c	namespace:__anon2	file:
+PropagationGraphTy	RangeWorkList.h	/^    typedef std::map<ValueNode, PropagationListTy> PropagationGraphTy;$/;"	t	class:RangeWorkList
+PropagationListTy	RangeWorkList.h	/^    typedef std::vector<llvm::Value*> PropagationListTy;$/;"	t	class:RangeWorkList
+QUERY_FAILED	SMTSolver.h	/^	QUERY_FAILED$/;"	e	enum:__anon21
+QUERY_SAT	SMTSolver.h	/^	QUERY_SAT,$/;"	e	enum:__anon21
+QUERY_TIMEOUT	SMTSolver.h	/^	QUERY_TIMEOUT,$/;"	e	enum:__anon21
+QUERY_UNDEFINED	SMTSolver.h	/^	QUERY_UNDEFINED = 0,$/;"	e	enum:__anon21
+QUERY_UNSAT	SMTSolver.h	/^	QUERY_UNSAT,$/;"	e	enum:__anon21
+R	RewriteAction.cc	/^	clang::Rewriter &R;$/;"	m	class:__anon19::RewriteVisitor	file:
+R	RewriteAction.cc	/^	clang::Rewriter R;$/;"	m	class:__anon19::RewriteConsumer	file:
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+Range	AnnotationManager.cc	/^		Range$/;"	e	enum:AnnotationRule::__anon14	file:
+RangeAnalysis	RangeAnalysis.cc	/^    RangeAnalysis() : llvm::ModulePass(ID) {$/;"	f	struct:__anon9::RangeAnalysis
+RangeAnalysis	RangeAnalysis.cc	/^struct RangeAnalysis : VRGraph, llvm::ModulePass, llvm::InstVisitor<RangeAnalysis, void> {$/;"	s	namespace:__anon9	file:
+RangeInfo	RangeInfo.h	/^	RangeInfo(LinkerContext *Ctx) : MaxIterations(5), LinkerCtx(Ctx) { }$/;"	f	class:RangeInfo
+RangeInfo	RangeInfo.h	/^class RangeInfo {$/;"	c
+RangeWorkList	RangeWorkList.h	/^    RangeWorkList(llvm::Module &M) {$/;"	f	class:RangeWorkList
+RangeWorkList	RangeWorkList.h	/^class RangeWorkList {$/;"	c
+Reachable	RangeAnalysis.cc	/^	std::set<llvm::BasicBlock*> Reachable;$/;"	m	struct:__anon9::RangeAnalysis	file:
+ReadNoneFuncs	TrapLinux.cc	/^static const char *ReadNoneFuncs[] = {$/;"	m	namespace:__anon25	file:
+ReadOnlyFuncs	TrapLinux.cc	/^static const char *ReadOnlyFuncs[] = {$/;"	m	namespace:__anon25	file:
+RecursivelyDeleteTriviallyDeadInstructions	Trap.h	/^bool RecursivelyDeleteTriviallyDeadInstructions(llvm::Instruction *I) {$/;"	f	namespace:Trap
+RewriteAction	RewriteAction.h	/^	explicit RewriteAction(llvm::raw_ostream &OS): OS(OS) { }$/;"	f	class:RewriteAction
+RewriteAction	RewriteAction.h	/^class RewriteAction : public clang::ASTFrontendAction {$/;"	c
+RewriteConsumer	RewriteAction.cc	/^	RewriteConsumer(llvm::raw_ostream &OS) : OS(OS) { }$/;"	f	class:__anon19::RewriteConsumer
+RewriteConsumer	RewriteAction.cc	/^class RewriteConsumer : public clang::ASTConsumer {$/;"	c	namespace:__anon19	file:
+RewriteVisitor	RewriteAction.cc	/^	RewriteVisitor(clang::Rewriter &R, clang::ASTContext &C) : R(R), C(C) { }$/;"	f	class:__anon19::RewriteVisitor
+RewriteVisitor	RewriteAction.cc	/^class RewriteVisitor : public clang::RecursiveASTVisitor<RewriteVisitor> {$/;"	c	namespace:__anon19	file:
+RuleKind	AnnotationManager.cc	/^	} RuleKind;$/;"	t	struct:AnnotationRule	typeref:enum:AnnotationRule::__anon14	file:
+SCEVCache	TrapSat.cc	/^	SCEVMap SCEVCache;$/;"	m	struct:__anon17::TrapSat	file:
+SCEVMap	TrapSat.cc	/^	typedef llvm::DenseMap<const llvm::SCEV *, SMTExpr> SCEVMap;$/;"	t	struct:__anon17::TrapSat	file:
+SE	Hoist.cc	/^	llvm::ScalarEvolution *SE;$/;"	m	class:__anon1::Hoist	file:
+SE	TautologicalCompare.cc	/^	llvm::ScalarEvolution *SE;$/;"	m	struct:__anon7::TautologicalCompare	file:
+SE	TrapAliasAnalysis.cc	/^	llvm::ScalarEvolution *SE;$/;"	m	struct:__anon16::TrapAliasAnalysis	file:
+SE	TrapLoop.cc	/^	llvm::ScalarEvolution *SE;$/;"	m	struct:__anon23::TrapLoop	file:
+SE	TrapSat.cc	/^	llvm::ScalarEvolution *SE;$/;"	m	struct:__anon17::TrapSat	file:
+SE	TrapSimplify.cc	/^	llvm::ScalarEvolution *SE;$/;"	m	struct:__anon20::TrapSimplify	file:
+SED	Makefile	/^SED = \/bin\/sed$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/bash$/;"	m
+SL	AnnotateAction.cc	/^	StructList &SL;$/;"	m	class:__anon6::AnnotateConsumer	file:
+SL	AnnotateAction.h	/^	StructList SL;$/;"	m	class:AnnotateAction
+SMAX	TrapLib.cc	122;"	d	file:
+SMIN	TrapLib.cc	121;"	d	file:
+SMINMAX	TrapLib.cc	123;"	d	file:
+SMTExpr	SMTSolver.h	/^typedef BtorExp *SMTExpr;$/;"	t
+SMTExpr	SMTSolver.h	/^typedef Z3_ast SMTExpr;$/;"	t
+SMTSolver	SMTSolver.h	/^typedef BoolectorSolver SMTSolver;$/;"	t
+SMTSolver	SMTSolver.h	/^typedef Z3Solver SMTSolver;$/;"	t
+SMT_LIB	Makefile	/^SMT_LIB = libboolector.a$/;"	m
+SMT_LIBADD	Makefile	/^SMT_LIBADD = -lboolector$/;"	m
+SOURCES	Makefile	/^SOURCES = $(libcint_la_SOURCES) $(libintmatch_la_SOURCES) \\$/;"	m
+SPConstProp	SPConstantProp.cc	/^	SPConstProp() : FunctionPass(ID) { }$/;"	f	struct:__anon24::SPConstProp
+SPConstProp	SPConstantProp.cc	/^struct SPConstProp : llvm::FunctionPass {$/;"	s	namespace:__anon24	file:
+STRIP	Makefile	/^STRIP = strip$/;"	m
+SetRegionConstraints	RangeAnalysis.cc	/^void SetRegionConstraints(VRMap &M, llvm::BasicBlock *BB, llvm::Value *V, IntRange R) {$/;"	f	namespace:__anon9
+Signs	AnnotationManager.h	/^	std::vector<bool> Signs;$/;"	m	struct:AnnotationExp
+Single	AnnotationManager.cc	/^		Single,$/;"	e	enum:AnnotationRule::__anon14	file:
+Sizes	TrapLinux.cc	/^static Param Sizes[] = {$/;"	m	namespace:__anon25	file:
+StructList	AnnotateAction.h	/^typedef llvm::SmallVector<llvm::SmallVector<std::string, 8>, 32> StructList;$/;"	t
+StructSet	AnnotateAction.cc	/^	typedef llvm::SmallPtrSet<clang::RecordDecl *, 16> StructSet;$/;"	t	class:__anon6::AnnotateConsumer	file:
+SysctlRange	SysctlRange.cc	/^	SysctlRange() : ModulePass(ID) { }$/;"	f	struct:__anon13::SysctlRange
+SysctlRange	SysctlRange.cc	/^struct SysctlRange : ModulePass {$/;"	s	namespace:__anon13	file:
+TD	TrapSat.cc	/^	llvm::OwningPtr<llvm::TargetData> TD;$/;"	m	struct:__anon17::TrapSat	file:
+TL	TrapSat.cc	/^	llvm::OwningPtr<TrapLib> TL;$/;"	m	struct:__anon17::TrapSat	file:
+TRAP_ANNOTATE_PREFIX	Trap.h	10;"	d
+TRAP_ARG_ANNOTATIONS	Trap.h	11;"	d
+TRAP_PREFIX	Trap.h	9;"	d
+TRAP_SEPARATOR	Trap.h	8;"	d
+TaintInfo	TaintInfo.h	/^	TaintInfo(LinkerContext *Ctx) : LinkerCtx(Ctx) { }$/;"	f	class:TaintInfo
+TaintInfo	TaintInfo.h	/^class TaintInfo {$/;"	c
+TaintSet	Linker.h	/^typedef std::map<std::string, bool \/* is source *\/> TaintSet;$/;"	t
+Taints	Linker.h	/^	TaintSet Taints;$/;"	m	struct:LinkerContext
+TautologicalCompare	TautologicalCompare.cc	/^	TautologicalCompare(llvm::raw_ostream *OS = &llvm::errs())$/;"	f	struct:__anon7::TautologicalCompare
+TautologicalCompare	TautologicalCompare.cc	/^struct TautologicalCompare : llvm::FunctionPass {$/;"	s	namespace:__anon7	file:
+TermR	AnnotationManager.cc	/^	qi::rule<std::string::iterator, AnnotationTerm(), ascii::space_type> TermR;$/;"	m	struct:__anon15::AnnotationGrammar	file:
+Terms	AnnotationManager.h	/^	std::vector<AnnotationTerm> Terms;$/;"	m	struct:AnnotationExp
+Trap	Trap.h	/^namespace Trap {$/;"	n
+TrapAliasAnalysis	TrapAliasAnalysis.cc	/^	TrapAliasAnalysis() : llvm::FunctionPass(ID) {$/;"	f	struct:__anon16::TrapAliasAnalysis
+TrapAliasAnalysis	TrapAliasAnalysis.cc	/^struct TrapAliasAnalysis : llvm::FunctionPass, llvm::AliasAnalysis {$/;"	s	namespace:__anon16	file:
+TrapAliasAnalysisID	TrapAliasAnalysis.cc	/^char &TrapAliasAnalysisID = TrapAliasAnalysis::ID;$/;"	v
+TrapCombine	TrapCombine.cc	/^	TrapCombine() : llvm::FunctionPass(ID) { }$/;"	f	struct:__anon18::TrapCombine
+TrapCombine	TrapCombine.cc	/^struct TrapCombine : llvm::FunctionPass {$/;"	s	namespace:__anon18	file:
+TrapGen	TrapGen.cc	/^	TrapGen() : llvm::ModulePass(ID) { }$/;"	f	struct:TrapGen
+TrapGen	TrapGen.cc	/^struct TrapGen : llvm::ModulePass {$/;"	s	file:
+TrapLib	TrapLib.cc	/^TrapLib::TrapLib(llvm::Module &M) {$/;"	f	class:TrapLib
+TrapLib	TrapLib.h	/^class TrapLib {$/;"	c
+TrapLinux	TrapLinux.cc	/^	TrapLinux() : llvm::ModulePass(ID) { }$/;"	f	class:__anon25::TrapLinux
+TrapLinux	TrapLinux.cc	/^class TrapLinux : public llvm::ModulePass {$/;"	c	namespace:__anon25	file:
+TrapLoop	TrapLoop.cc	/^	TrapLoop() : llvm::FunctionPass(ID) {$/;"	f	struct:__anon23::TrapLoop
+TrapLoop	TrapLoop.cc	/^struct TrapLoop : llvm::FunctionPass {$/;"	s	namespace:__anon23	file:
+TrapSat	TrapSat.cc	/^	TrapSat() : llvm::FunctionPass(ID), Invariant(0) {$/;"	f	struct:__anon17::TrapSat
+TrapSat	TrapSat.cc	/^struct TrapSat : llvm::FunctionPass, SMTSolver, llvm::SCEVVisitor<TrapSat, SMTExpr> {$/;"	s	namespace:__anon17	file:
+TrapSatID	TrapSat.cc	/^char &TrapSatID = TrapSat::ID;$/;"	v
+TrapSatMP	TrapSatMP.cc	/^	TrapSatMP() : llvm::ModulePass(ID) { }$/;"	f	struct:__anon22::TrapSatMP
+TrapSatMP	TrapSatMP.cc	/^struct TrapSatMP : llvm::ModulePass {$/;"	s	namespace:__anon22	file:
+TrapSimplify	TrapSimplify.cc	/^	TrapSimplify() : llvm::FunctionPass(ID) {$/;"	f	struct:__anon20::TrapSimplify
+TrapSimplify	TrapSimplify.cc	/^struct TrapSimplify : llvm::FunctionPass {$/;"	s	namespace:__anon20	file:
+TraverseType	RewriteAction.cc	/^	bool TraverseType(clang::QualType)   { return true; }$/;"	f	class:__anon19::RewriteVisitor
+TraverseTypeLoc	RewriteAction.cc	/^	bool TraverseTypeLoc(clang::TypeLoc) { return true; }$/;"	f	class:__anon19::RewriteVisitor
+U	ValueNode.h	/^    } U;$/;"	m	struct:ValueNode	typeref:union:ValueNode::__anon8
+UMAX	TrapLib.cc	151;"	d	file:
+UMIN	TrapLib.cc	150;"	d	file:
+UMINMAX	TrapLib.cc	152;"	d	file:
+Unlikely	TrapLib.cc	/^	SMTExpr Unlikely = SMT.eq(ret, size);$/;"	v
+V	ValueNode.h	/^        const llvm::Value* V;$/;"	m	union:ValueNode::__anon8
+V1	AnnotationManager.cc	/^	AnnotationExp V1;$/;"	m	struct:AnnotationRule	file:
+V2	AnnotationManager.cc	/^	AnnotationExp V2;$/;"	m	struct:AnnotationRule	file:
+VERSION	Makefile	/^VERSION = 0.1$/;"	m
+VR	RangeAnalysis.cc	/^    VRMap VR;$/;"	m	struct:__anon9::RangeAnalysis	file:
+VRGraph	VRGraph.h	/^struct VRGraph {$/;"	s
+VRMap	VRMap.h	/^    VRMap() {$/;"	f	class:VRMap
+VRMap	VRMap.h	/^class VRMap {$/;"	c
+VTS	TaintInfo.h	/^	ValueTaintSet VTS;$/;"	m	class:TaintInfo
+ValueKindTy	ValueNode.h	/^    enum ValueKindTy {$/;"	g	struct:ValueNode
+ValueNode	ValueNode.h	/^    ValueNode(const ValueNode &A) {$/;"	f	struct:ValueNode
+ValueNode	ValueNode.h	/^    ValueNode(const llvm::Value* V) {$/;"	f	struct:ValueNode
+ValueNode	ValueNode.h	/^struct ValueNode {$/;"	s
+ValueR	AnnotationManager.cc	/^	qi::rule<std::string::iterator, AnnotationExpValue(), ascii::space_type> ValueR;$/;"	m	struct:__anon15::AnnotationGrammar	file:
+ValueRangeMap	RangeInfo.h	/^	typedef std::map<llvm::Value *, llvm::ConstantRange> ValueRangeMap;$/;"	t	class:RangeInfo
+ValueSet	GEPUnroll.cc	/^	typedef llvm::SmallPtrSet<llvm::Value *, 16>   ValueSet;$/;"	t	struct:__anon3::GEPUnroll	file:
+ValueTaintSet	TaintInfo.h	/^	typedef llvm::SmallPtrSet<llvm::Value *, 16> ValueTaintSet;$/;"	t	class:TaintInfo
+VisitArraySubscriptExpr	RewriteAction.cc	/^	bool VisitArraySubscriptExpr(clang::ArraySubscriptExpr *E) {$/;"	f	class:__anon19::RewriteVisitor
+VisitCastExpr	RewriteAction.cc	/^	bool VisitCastExpr(clang::CastExpr *E) {$/;"	f	class:__anon19::RewriteVisitor
+Visited	PHICombine.cc	/^	llvm::SmallPtrSet<llvm::Instruction *, 16> Visited;$/;"	m	struct:__anon10::PHICombine	file:
+WL	RangeWorkList.h	/^    std::queue<llvm::Value*> WL;$/;"	m	class:RangeWorkList
+WatchID	RangeInfo.cc	/^static std::string WatchID = "";$/;"	v	file:
+Width	JSONWriter.h	/^	static const size_t Width = 2;$/;"	m	class:JSONWriter
+WorkList	RangeAnalysis.cc	/^    RangeWorkList *WorkList;$/;"	m	struct:__anon9::RangeAnalysis	file:
+Z3Solver	SMTSolver.h	/^	Z3Solver() {$/;"	f	class:Z3Solver
+Z3Solver	SMTSolver.h	/^class Z3Solver {$/;"	c
+Z3_API	SMTSolver.h	349;"	d
+__ecount	SMTSolver.h	344;"	d
+__in	SMTSolver.h	340;"	d
+__in_ecount	SMTSolver.h	345;"	d
+__in_z	SMTSolver.h	341;"	d
+__inout	SMTSolver.h	348;"	d
+__inout_ecount	SMTSolver.h	347;"	d
+__out	SMTSolver.h	342;"	d
+__out_ecount	SMTSolver.h	346;"	d
+__out_z	SMTSolver.h	343;"	d
+abs_builddir	Makefile	/^abs_builddir = \/home\/xqx\/kint\/xi-int\/src$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/xqx\/kint\/xi-int\/src$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/xqx\/kint\/xi-int$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/xqx\/kint\/xi-int$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_DUMPBIN	Makefile	/^ac_ct_DUMPBIN = $/;"	m
+act	IntAction.cc	/^void IntAction::act(clang::CompilerInstance &Clang, llvm::StringRef InFile) {$/;"	f	class:IntAction
+addAnnotationMD	AnnotateAction.cc	/^void AnnotateAction::addAnnotationMD(llvm::Module *M)$/;"	f	class:AnnotateAction
+addBBOnPath	Hoist.cc	/^void Hoist::addBBOnPath(llvm::BasicBlock *BB, llvm::BasicBlock *BBToHoistTo,$/;"	f	class:Hoist
+alias	TrapAliasAnalysis.cc	/^TrapAliasAnalysis::alias(const Location &LocA, const Location &LocB) {$/;"	f	class:TrapAliasAnalysis
+am__DEPENDENCIES_1	Makefile	/^am__DEPENDENCIES_1 =$/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__base_list	Makefile	/^am__base_list = \\$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__install_max	Makefile	/^am__install_max = 40$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(bindir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__nobase_list	Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m
+am__nobase_strip	Makefile	/^am__nobase_strip = \\$/;"	m
+am__nobase_strip_setup	Makefile	/^am__nobase_strip_setup = \\$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__strip_dir	Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am__v_CXXLD_	Makefile	/^am__v_CXXLD_ = $(am__v_CXXLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CXXLD_0	Makefile	/^am__v_CXXLD_0 = @echo "  CXXLD " $@;$/;"	m
+am__v_CXX_	Makefile	/^am__v_CXX_ = $(am__v_CXX_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CXX_0	Makefile	/^am__v_CXX_0 = @echo "  CXX   " $@;$/;"	m
+am__v_GEN_	Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_0	Makefile	/^am__v_GEN_0 = @echo "  GEN   " $@;$/;"	m
+am__v_at_	Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_0	Makefile	/^am__v_at_0 = @$/;"	m
+am__v_lt_	Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_lt_0	Makefile	/^am__v_lt_0 = --silent$/;"	m
+am__vpath_adj	Makefile	/^am__vpath_adj = case $$p in \\$/;"	m
+am__vpath_adj_setup	Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
+am_cintld_OBJECTS	Makefile	/^am_cintld_OBJECTS = Linker.$(OBJEXT) CallInfo.$(OBJEXT) \\$/;"	m
+am_libcint_la_OBJECTS	Makefile	/^am_libcint_la_OBJECTS = IntAction.lo RewriteAction.lo \\$/;"	m
+am_libintmatch_la_OBJECTS	Makefile	/^am_libintmatch_la_OBJECTS = TautologicalCompare.lo$/;"	m
+am_libintsat_la_OBJECTS	Makefile	/^am_libintsat_la_OBJECTS = libintsat_la-TrapLib.lo \\$/;"	m
+am_libsysctlrange_la_OBJECTS	Makefile	/^am_libsysctlrange_la_OBJECTS = SysctlRange.lo$/;"	m
+annotate	RewriteAction.cc	/^	void annotate(clang::Expr *E, const llvm::Twine &Anno) {$/;"	f	class:__anon19::RewriteVisitor	file:
+appendConstraints	VRMap.h	/^    void appendConstraints(const VRMap &A) {$/;"	f	class:VRMap
+ashr	IntRange.cc	/^IntRange IntRange::ashr(const IntRange &R) const {$/;"	f	class:IntRange
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = cintld$(EXEEXT)$/;"	m
+binaryOr	IntRange.cc	/^IntRange IntRange::binaryOr(const IntRange &R) const {$/;"	f	class:IntRange
+binaryXor	IntRange.cc	/^IntRange IntRange::binaryXor(const IntRange &R) const {$/;"	f	class:IntRange
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bool2bv	SMTSolver.h	/^	SMTExpr bool2bv(SMTExpr R) { return R; }$/;"	f	class:BoolectorSolver
+bool2bv	SMTSolver.h	/^	SMTExpr bool2bv(SMTExpr R) {$/;"	f	class:Z3Solver
+build	Makefile	/^build = x86_64-unknown-linux-gnu$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_cpu	Makefile	/^build_cpu = x86_64$/;"	m
+build_os	Makefile	/^build_os = linux-gnu$/;"	m
+build_triplet	Makefile	/^build_triplet = x86_64-unknown-linux-gnu$/;"	m
+build_vendor	Makefile	/^build_vendor = unknown$/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+bv0	SMTSolver.h	/^	SMTExpr bv0, bv1;$/;"	m	class:Z3Solver
+bv1	SMTSolver.h	/^	SMTExpr bv0, bv1;$/;"	m	class:Z3Solver
+bv2bool	SMTSolver.h	/^	SMTExpr bv2bool(SMTExpr R) { return R; }$/;"	f	class:BoolectorSolver
+bv2bool	SMTSolver.h	/^	SMTExpr bv2bool(SMTExpr R) {$/;"	f	class:Z3Solver
+bvadd	SMTSolver.h	/^	SMTExpr bvadd(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvadd	SMTSolver.h	/^	SMTExpr bvadd(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvadd_signed_overflow	SMTSolver.h	/^	SMTExpr bvadd_signed_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvadd_signed_overflow	SMTSolver.h	/^	SMTExpr bvadd_signed_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvadd_unsigned_overflow	SMTSolver.h	/^	SMTExpr bvadd_unsigned_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvadd_unsigned_overflow	SMTSolver.h	/^	SMTExpr bvadd_unsigned_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvand	SMTSolver.h	/^	SMTExpr bvand(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvand	SMTSolver.h	/^	SMTExpr bvand(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvashr	SMTSolver.h	/^	SMTExpr bvashr(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvashr	SMTSolver.h	/^	SMTExpr bvashr(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvconst	SMTSolver.h	/^	SMTExpr bvconst(unsigned width, uint64_t value) {$/;"	f	class:BoolectorSolver
+bvconst	SMTSolver.h	/^	SMTExpr bvconst(unsigned width, uint64_t value) {$/;"	f	class:Z3Solver
+bvlshr	SMTSolver.h	/^	SMTExpr bvlshr(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvlshr	SMTSolver.h	/^	SMTExpr bvlshr(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvmul	SMTSolver.h	/^	SMTExpr bvmul(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvmul	SMTSolver.h	/^	SMTExpr bvmul(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvmul_signed_overflow	SMTSolver.h	/^	SMTExpr bvmul_signed_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvmul_signed_overflow	SMTSolver.h	/^	SMTExpr bvmul_signed_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvmul_unsigned_overflow	SMTSolver.h	/^	SMTExpr bvmul_unsigned_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvmul_unsigned_overflow	SMTSolver.h	/^	SMTExpr bvmul_unsigned_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvneg_overflow	SMTSolver.h	/^	SMTExpr bvneg_overflow(SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvneg_overflow	SMTSolver.h	/^	SMTExpr bvneg_overflow(SMTExpr R) {$/;"	f	class:Z3Solver
+bvor	SMTSolver.h	/^	SMTExpr bvor(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvor	SMTSolver.h	/^	SMTExpr bvor(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvredand	SMTSolver.h	/^	SMTExpr bvredand(SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvredand	SMTSolver.h	/^	SMTExpr bvredand(SMTExpr R) {$/;"	f	class:Z3Solver
+bvredor	SMTSolver.h	/^	SMTExpr bvredor(SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvredor	SMTSolver.h	/^	SMTExpr bvredor(SMTExpr R) {$/;"	f	class:Z3Solver
+bvsdiv	SMTSolver.h	/^	SMTExpr bvsdiv(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvsdiv	SMTSolver.h	/^	SMTExpr bvsdiv(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvsdiv_overflow	SMTSolver.h	/^	SMTExpr bvsdiv_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvsdiv_overflow	SMTSolver.h	/^	SMTExpr bvsdiv_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvsge	SMTSolver.h	/^	SMTExpr bvsge(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvsge	SMTSolver.h	/^	SMTExpr bvsge(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvsgt	SMTSolver.h	/^	SMTExpr bvsgt(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvsgt	SMTSolver.h	/^	SMTExpr bvsgt(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvshl	SMTSolver.h	/^	SMTExpr bvshl(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvshl	SMTSolver.h	/^	SMTExpr bvshl(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvsle	SMTSolver.h	/^	SMTExpr bvsle(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvsle	SMTSolver.h	/^	SMTExpr bvsle(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvslt	SMTSolver.h	/^	SMTExpr bvslt(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvslt	SMTSolver.h	/^	SMTExpr bvslt(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvsmax	SMTSolver.h	/^	SMTExpr bvsmax(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvsmax	SMTSolver.h	/^	SMTExpr bvsmax(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvsrem	SMTSolver.h	/^	SMTExpr bvsrem(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvsrem	SMTSolver.h	/^	SMTExpr bvsrem(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvsub	SMTSolver.h	/^	SMTExpr bvsub(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvsub	SMTSolver.h	/^	SMTExpr bvsub(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvsub_signed_overflow	SMTSolver.h	/^	SMTExpr bvsub_signed_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvsub_signed_overflow	SMTSolver.h	/^	SMTExpr bvsub_signed_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvsub_unsigned_overflow	SMTSolver.h	/^	SMTExpr bvsub_unsigned_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvsub_unsigned_overflow	SMTSolver.h	/^	SMTExpr bvsub_unsigned_overflow(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvudiv	SMTSolver.h	/^	SMTExpr bvudiv(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvudiv	SMTSolver.h	/^	SMTExpr bvudiv(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvuge	SMTSolver.h	/^	SMTExpr bvuge(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvuge	SMTSolver.h	/^	SMTExpr bvuge(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvugt	SMTSolver.h	/^	SMTExpr bvugt(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvugt	SMTSolver.h	/^	SMTExpr bvugt(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvule	SMTSolver.h	/^	SMTExpr bvule(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvule	SMTSolver.h	/^	SMTExpr bvule(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvult	SMTSolver.h	/^	SMTExpr bvult(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvult	SMTSolver.h	/^	SMTExpr bvult(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvumax	SMTSolver.h	/^	SMTExpr bvumax(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvumax	SMTSolver.h	/^	SMTExpr bvumax(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvurem	SMTSolver.h	/^	SMTExpr bvurem(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvurem	SMTSolver.h	/^	SMTExpr bvurem(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+bvvar	SMTSolver.h	/^	SMTExpr bvvar(unsigned width, const char *name) {$/;"	f	class:BoolectorSolver
+bvvar	SMTSolver.h	/^	SMTExpr bvvar(unsigned width, const char *name) {$/;"	f	class:Z3Solver
+bvwidth	SMTSolver.h	/^	unsigned bvwidth(SMTExpr E) {$/;"	f	class:BoolectorSolver
+bvwidth	SMTSolver.h	/^	unsigned bvwidth(SMTExpr E) {$/;"	f	class:Z3Solver
+bvxor	SMTSolver.h	/^	SMTExpr bvxor(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+bvxor	SMTSolver.h	/^	SMTExpr bvxor(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+canBasicBlockModify	Hoist.cc	/^	bool canBasicBlockModify(const llvm::BasicBlock *BB, const Location &Loc) {$/;"	f	class:__anon1::Hoist	file:
+canInstructionRangeModify	Hoist.cc	/^	bool canInstructionRangeModify($/;"	f	class:__anon1::Hoist	file:
+checkAgainst	VRMap.h	/^	bool checkAgainst(const VRMap &A) {$/;"	f	class:VRMap
+checkTaintSource	TaintInfo.cc	/^bool TaintInfo::checkTaintSource(llvm::Function *F)$/;"	f	class:TaintInfo
+checkTaintSource	TaintInfo.cc	/^bool TaintInfo::checkTaintSource(llvm::Instruction *I)$/;"	f	class:TaintInfo
+cintld_LDADD	Makefile	/^cintld_LDADD = $(LDADD)$/;"	m
+cintld_LDFLAGS	Makefile	/^cintld_LDFLAGS = `llvm-config --ldflags` -lLLVM-`llvm-config --version`$/;"	m
+cintld_LINK	Makefile	/^cintld_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \\$/;"	m
+cintld_OBJECTS	Makefile	/^cintld_OBJECTS = $(am_cintld_OBJECTS)$/;"	m
+cintld_SOURCES	Makefile	/^cintld_SOURCES = Linker.cc CallInfo.cc RangeInfo.cc TaintInfo.cc$/;"	m
+clear	VRMap.h	/^    void clear() {$/;"	f	class:VRMap
+cnt	TrapLib.cc	/^	SMTExpr cnt = SMT.get(CS.getArgument(2));$/;"	v
+collectCallers	CallInfo.cc	/^void CallInfo::collectCallers(llvm::Module *M)$/;"	f	class:CallInfo
+collectDbgInfo	TrapSat.cc	/^void TrapSat::collectDbgInfo(llvm::Instruction *I, Dict &Item) {$/;"	f	class:TrapSat
+collectFPAssignments	CallInfo.cc	/^bool CallInfo::collectFPAssignments(llvm::Function *F)$/;"	f	class:CallInfo
+collectFPAssignments	CallInfo.cc	/^bool CallInfo::collectFPAssignments(llvm::Module *M)$/;"	f	class:CallInfo
+collectFPAssignments	CallInfo.cc	/^bool CallInfo::collectFPAssignments(llvm::Value *V, FuncSet &S)$/;"	f	class:CallInfo
+collectFPAssignments	CallInfo.cc	/^bool CallInfo::collectFPAssignments(llvm::Value *V, FuncSet &S, $/;"	f	class:CallInfo
+collectFPInitializers	CallInfo.cc	/^void CallInfo::collectFPInitializers(llvm::Constant *I)$/;"	f	class:CallInfo
+collectFPInitializers	CallInfo.cc	/^void CallInfo::collectFPInitializers(llvm::Module *M)$/;"	f	class:CallInfo
+collectGlobalFunctions	CallInfo.cc	/^void CallInfo::collectGlobalFunctions(llvm::Module *M)$/;"	f	class:CallInfo
+collectInitializers	RangeInfo.cc	/^void RangeInfo::collectInitializers(llvm::GlobalVariable *GV, llvm::Constant *I)$/;"	f	class:RangeInfo
+collectInitializers	RangeInfo.cc	/^void RangeInfo::collectInitializers(llvm::Module *M)$/;"	f	class:RangeInfo
+collectPHIs	GEPUnroll.cc	/^	void collectPHIs(llvm::PHINode *PN, ValueSet &VS, PHISet &Visited) {$/;"	f	struct:__anon3::GEPUnroll	file:
+collectStructs	CallInfo.cc	/^void CallInfo::collectStructs(llvm::Module *M)$/;"	f	class:CallInfo
+computeCmp	TautologicalCompare.cc	/^	const char *computeCmp($/;"	f	struct:__anon7::TautologicalCompare	file:
+conditionAnd	VRMap.h	/^	void conditionAnd(const VRMap &A) {$/;"	f	class:VRMap
+conditionOr	VRMap.h	/^	void conditionOr(const VRMap &A) {$/;"	f	class:VRMap
+conv_and_warn_if_unmatch	RangeInfo.cc	/^void conv_and_warn_if_unmatch(llvm::ConstantRange &V1, llvm::ConstantRange &V2)$/;"	f
+copy	SMTSolver.h	/^	SMTExpr copy(SMTExpr E) { return E; }$/;"	f	class:Z3Solver
+copy	SMTSolver.h	/^	SMTExpr copy(SMTExpr E) {$/;"	f	class:BoolectorSolver
+count	TrapLib.cc	/^	SMTExpr count = SMT.bvconst(SMT.bvwidth(next_to_clean), 4096);$/;"	v
+count	TrapLib.cc	/^	SMTExpr count = SMT.bvconst(SMT.bvwidth(next_to_use), 4096);$/;"	v
+createHoistPass	Hoist.cc	/^llvm::Pass *createHoistPass() {$/;"	f
+createLowerAnnotationPass	LowerAnnotation.cc	/^llvm::Pass *createLowerAnnotationPass() {$/;"	f
+createLowerOverflowPass	LowerOverflow.cc	/^llvm::Pass *createLowerOverflowPass() {$/;"	f
+createOverflow	Overflow.cc	/^	llvm::CallInst *createOverflow(llvm::Intrinsic::ID id,$/;"	f	struct:__anon4::Overflow	file:
+createOverflowPass	Overflow.cc	/^llvm::Pass *createOverflowPass() {$/;"	f
+createTrapAliasAnalysisPass	TrapAliasAnalysis.cc	/^llvm::Pass *createTrapAliasAnalysisPass() {$/;"	f
+createTrapCombinePass	TrapCombine.cc	/^llvm::Pass *createTrapCombinePass() {$/;"	f
+createTrapGenPass	TrapGen.cc	/^llvm::Pass *createTrapGenPass() {$/;"	f
+createTrapLinuxPass	TrapLinux.cc	/^llvm::Pass *createTrapLinuxPass() {$/;"	f
+createTrapLoopPass	TrapLoop.cc	/^llvm::Pass *createTrapLoopPass() {$/;"	f
+createTrapSatPass	TrapSat.cc	/^llvm::Pass *createTrapSatPass() {$/;"	f
+createTrapSimplifyPass	TrapSimplify.cc	/^llvm::Pass *createTrapSimplifyPass() {$/;"	f
+createUAddOverflow	Overflow.cc	/^	llvm::CallInst *createUAddOverflow(llvm::Value *L, llvm::Value *R) {$/;"	f	struct:__anon4::Overflow	file:
+createUMulOverflow	Overflow.cc	/^	llvm::CallInst *createUMulOverflow(llvm::Value *L, llvm::Value *R) {$/;"	f	struct:__anon4::Overflow	file:
+createUSubOverflow	Overflow.cc	/^	llvm::CallInst *createUSubOverflow(llvm::Value *L, llvm::Value *R) {$/;"	f	struct:__anon4::Overflow	file:
+ctx	SMTSolver.h	/^	Btor *ctx;$/;"	m	class:BoolectorSolver
+ctx	SMTSolver.h	/^	Z3_context ctx;$/;"	m	class:Z3Solver
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+deleteBody	TrapLinux.cc	/^void TrapLinux::deleteBody(llvm::Module &M) {$/;"	f	class:TrapLinux
+deleteBody	TrapLinux.cc	/^void TrapLinux::deleteBody(llvm::Module &M, const char *Name) {$/;"	f	class:TrapLinux
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/build-aux\/depcomp$/;"	m
+deque	RangeWorkList.h	/^    llvm::Value* deque() {$/;"	f	class:RangeWorkList
+dev	TrapLib.cc	/^	SMTExpr dev = SMT.get(F.arg_begin());$/;"	v
+divHelper	IntRange.cc	/^int divHelper(const IntRange &R, llvm::APInt &l, llvm::APInt &r) {$/;"	f	namespace:__anon26
+doCallInfo	Linker.cc	/^void doCallInfo(llvm::raw_ostream &OS)$/;"	f
+doInitialization	Overflow.cc	/^	virtual bool doInitialization(llvm::Module &M) {$/;"	f	struct:__anon4::Overflow
+doInitialization	TrapAliasAnalysis.cc	/^bool TrapAliasAnalysis::doInitialization(llvm::Module &M) {$/;"	f	class:TrapAliasAnalysis
+doInitialization	TrapSat.cc	/^	virtual bool doInitialization(llvm::Module &M) {$/;"	f	struct:__anon17::TrapSat
+doRangeInfo	Linker.cc	/^void doRangeInfo(llvm::raw_ostream &OS)$/;"	f
+doTaintInfo	Linker.cc	/^void doTaintInfo(llvm::raw_ostream &OS) $/;"	f
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dummy_handler	TrapSat.cc	/^	static void dummy_handler(int) { }$/;"	f	struct:__anon17::TrapSat	file:
+dump	VRMap.h	/^    void dump() {$/;"	f	class:VRMap
+dump	ValueNode.h	/^    void dump() const {$/;"	f	struct:ValueNode
+dumpCallers	Linker.h	/^	void dumpCallers(llvm::raw_ostream &OS)$/;"	f	struct:LinkerContext
+dumpFuncPtrs	Linker.h	/^	void dumpFuncPtrs(llvm::raw_ostream &OS)$/;"	f	struct:LinkerContext
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+e	TrapLib.cc	/^	llvm::inst_iterator i, e;$/;"	v
+encodeSourceLocation	AnnotateAction.cc	/^	static std::string encodeSourceLocation(clang::SourceManager &SM, $/;"	f	class:__anon6::AnnotateConsumer
+encodeTypeName	AnnotateAction.cc	/^	const char *encodeTypeName(const clang::QualType Ty) const {$/;"	f	class:__anon6::AnnotateConsumer
+eq	SMTSolver.h	/^	SMTExpr eq(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+eq	SMTSolver.h	/^	SMTExpr eq(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+expand	TrapLoop.cc	/^bool TrapLoop::expand(llvm::CallInst *I, llvm::Loop *L, llvm::BasicBlock *BB) {$/;"	f	class:TrapLoop
+extract	SMTSolver.h	/^	SMTExpr extract(unsigned high, unsigned low, SMTExpr R) {$/;"	f	class:BoolectorSolver
+extract	SMTSolver.h	/^	SMTExpr extract(unsigned high, unsigned low, SMTExpr R) {$/;"	f	class:Z3Solver
+extractCtlTable	SysctlRange.cc	/^void SysctlRange::extractCtlTable(ConstantStruct *C) {$/;"	f	class:SysctlRange
+fillIndexRange	GEPUnroll.cc	/^	void fillIndexRange(llvm::LoadInst *I, llvm::GetElementPtrInst *GEP) {$/;"	f	struct:__anon3::GEPUnroll	file:
+findGlobalFunction	Linker.h	/^	llvm::Function * findGlobalFunction(llvm::StringRef name)$/;"	f	struct:LinkerContext
+find_taint	TrapSat.cc	/^std::string TrapSat::find_taint(llvm::Value *V)$/;"	f	class:TrapSat
+forceWrap	IntAction.cc	/^void IntAction::forceWrap(llvm::Module &M) {$/;"	f	class:IntAction
+generateBinaryTrap	TrapGen.cc	/^static void generateBinaryTrap(llvm::Instruction *I) {$/;"	f	file:
+generateTrap	TrapGen.cc	/^void generateTrap(llvm::Instruction *I) {$/;"	f
+generateTrap	TrapLinux.cc	/^void TrapLinux::generateTrap(llvm::Module &M) {$/;"	f	class:TrapLinux
+generateUnaryTrap	TrapGen.cc	/^static void generateUnaryTrap(llvm::Instruction *I) {$/;"	f	file:
+generateUnaryTrap	TrapLinux.cc	/^void TrapLinux::generateUnaryTrap(const char *Trap, Param *Params, llvm::CallInst *I) {$/;"	f	class:TrapLinux
+get	TrapSat.cc	/^SMTExpr TrapSat::get(const llvm::SCEV *S) {$/;"	f	class:TrapSat
+get	TrapSat.cc	/^SMTExpr TrapSat::get(llvm::Value *V) {$/;"	f	class:TrapSat
+getAdjustedAnalysisPointer	RangeAnalysis.cc	/^    virtual void *getAdjustedAnalysisPointer(llvm::AnalysisID ID) {$/;"	f	struct:__anon9::RangeAnalysis
+getAdjustedAnalysisPointer	TrapAliasAnalysis.cc	/^	virtual void *getAdjustedAnalysisPointer(llvm::AnalysisID ID) {$/;"	f	struct:__anon16::TrapAliasAnalysis
+getAnalysisUsage	GEPUnroll.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon3::GEPUnroll
+getAnalysisUsage	Hoist.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	class:__anon1::Hoist
+getAnalysisUsage	LowerAnnotation.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon12::LowerAnnotation
+getAnalysisUsage	LowerOverflow.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon11::LowerOverflow
+getAnalysisUsage	Overflow.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon4::Overflow
+getAnalysisUsage	PHICombine.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon10::PHICombine
+getAnalysisUsage	RangeAnalysis.cc	/^    virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon9::RangeAnalysis
+getAnalysisUsage	SPConstantProp.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon24::SPConstProp
+getAnalysisUsage	SysctlRange.cc	/^	virtual void getAnalysisUsage(AnalysisUsage &AU) const {$/;"	f	struct:__anon13::SysctlRange
+getAnalysisUsage	TautologicalCompare.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon7::TautologicalCompare
+getAnalysisUsage	TrapAliasAnalysis.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon16::TrapAliasAnalysis
+getAnalysisUsage	TrapCombine.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon18::TrapCombine
+getAnalysisUsage	TrapLinux.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	class:__anon25::TrapLinux
+getAnalysisUsage	TrapLoop.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon23::TrapLoop
+getAnalysisUsage	TrapSat.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon17::TrapSat
+getAnalysisUsage	TrapSatMP.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon22::TrapSatMP
+getAnalysisUsage	TrapSimplify.cc	/^	virtual void getAnalysisUsage(llvm::AnalysisUsage &AU) const {$/;"	f	struct:__anon20::TrapSimplify
+getArgID	Linker.h	/^static inline std::string getArgID(llvm::Argument *A)$/;"	f
+getArgID	Linker.h	/^static inline std::string getArgID(llvm::Function *F, unsigned i)$/;"	f
+getAsPtrAnnotation	LowerAnnotation.cc	/^static llvm::IntrinsicInst *getAsPtrAnnotation(llvm::Value *V) {$/;"	f	file:
+getBaseValue	TrapAliasAnalysis.cc	/^llvm::Value *TrapAliasAnalysis::getBaseValue(const llvm::SCEV *S) {$/;"	f	class:TrapAliasAnalysis
+getBitWidth	TrapSat.cc	/^	unsigned getBitWidth(T *V) const { return getBitWidth(V->getType()); }$/;"	f	struct:__anon17::TrapSat	file:
+getBitWidth	TrapSat.cc	/^	unsigned getBitWidth(llvm::Type *T) const {$/;"	f	struct:__anon17::TrapSat	file:
+getConstant	AnnotationManager.cc	/^bool getConstant(const AnnotationExp &E, long long &v) {$/;"	f	namespace:__anon15
+getExternConstraint	TrapSat.cc	/^	SMTExpr getExternConstraint(llvm::Value *V) {$/;"	f	struct:__anon17::TrapSat
+getFieldID	Linker.h	/^	llvm::StringRef getFieldID(llvm::StructType *STy, unsigned i) {$/;"	f	struct:LinkerContext
+getFunctionExp	AnnotationManager.h	/^	bool getFunctionExp(const std::string &Name, std::pair<AnnotationExp, AnnotationExp> &R) const {$/;"	f	class:AnnotationManager
+getGlobalRange	AnnotationManager.h	/^	bool getGlobalRange(const std::string &Name, std::pair<long long, long long> &R) const {$/;"	f	class:AnnotationManager
+getGuardFor	TrapSat.cc	/^SMTExpr TrapSat::getGuardFor(llvm::BasicBlock *BB) {$/;"	f	class:TrapSat
+getIndexRange	GEPUnroll.cc	/^	llvm::ConstantRange getIndexRange(const llvm::Type *T, llvm::Value *V) {$/;"	f	struct:__anon3::GEPUnroll	file:
+getInitGuard	TrapSat.cc	/^SMTExpr TrapSat::getInitGuard(llvm::Function *F) {$/;"	f	class:TrapSat
+getInitializer	SysctlRange.cc	/^static ConstantInt *getInitializer(GlobalVariable *V) {$/;"	f	file:
+getModRefInfo	TrapAliasAnalysis.cc	/^	getModRefInfo(llvm::ImmutableCallSite CS1, llvm::ImmutableCallSite CS2) {$/;"	f	struct:__anon16::TrapAliasAnalysis
+getModRefInfo	TrapAliasAnalysis.cc	/^TrapAliasAnalysis::getModRefInfo(llvm::ImmutableCallSite CS, const Location &Loc) {$/;"	f	class:TrapAliasAnalysis
+getName	Trap.h	/^llvm::StringRef getName(const llvm::Instruction *I) {$/;"	f	namespace:Trap
+getPHIGuard	TrapSat.cc	/^SMTExpr TrapSat::getPHIGuard(llvm::BasicBlock *BB, llvm::BasicBlock *Pred) {$/;"	f	class:TrapSat
+getRange	RangeInfo.cc	/^llvm::ConstantRange RangeInfo::getRange(llvm::BasicBlock *BB, llvm::Value *V)$/;"	f	class:RangeInfo
+getRecordID	AnnotateAction.cc	/^	static std::string getRecordID(clang::RecordDecl *RD) {$/;"	f	class:__anon6::AnnotateConsumer
+getRetID	Linker.h	/^static inline std::string getRetID(llvm::CallInst *CI)$/;"	f
+getRetID	Linker.h	/^static inline std::string getRetID(llvm::Function *CF)$/;"	f
+getScopeName	Linker.h	/^static inline std::string getScopeName(llvm::GlobalValue *GV)$/;"	f
+getSwitchFromPHI	SPConstantProp.cc	/^	llvm::SwitchInst* getSwitchFromPHI(llvm::PHINode *PI) {$/;"	f	struct:__anon24::SPConstProp	file:
+getTermGuard	TrapSat.cc	/^SMTExpr TrapSat::getTermGuard(llvm::BranchInst *I, llvm::BasicBlock *BB) {$/;"	f	class:TrapSat
+getTermGuard	TrapSat.cc	/^SMTExpr TrapSat::getTermGuard(llvm::SwitchInst *I, llvm::BasicBlock *BB) {$/;"	f	class:TrapSat
+getTermGuard	TrapSat.cc	/^SMTExpr TrapSat::getTermGuard(llvm::TerminatorInst *I, llvm::BasicBlock *BB) {$/;"	f	class:TrapSat
+getTrap	TrapSat.cc	/^SMTExpr TrapSat::getTrap(llvm::StringRef Op, llvm::Value *V) {$/;"	f	class:TrapSat
+getTrap	TrapSat.cc	/^SMTExpr TrapSat::getTrap(llvm::StringRef Op, llvm::Value *V0, llvm::Value *V1) {$/;"	f	class:TrapSat
+getValueID	Linker.h	/^static inline std::string getValueID(llvm::Value *V)$/;"	f
+getValueRange	RangeAnalysis.cc	/^    virtual IntRange getValueRange(llvm::Value* V) {$/;"	f	struct:__anon9::RangeAnalysis
+getValueRange	VRMap.h	/^    IntRange getValueRange(llvm::Value *V, bool FullIfNotFound = false) {$/;"	f	class:VRMap
+getValueRangeInBB	RangeAnalysis.cc	/^    IntRange getValueRangeInBB(llvm::Value* V, llvm::BasicBlock* BB) {$/;"	f	struct:__anon9::RangeAnalysis
+getVarID	Linker.h	/^static inline std::string getVarID(llvm::GlobalVariable *GV)$/;"	f
+hasArgAnno	TrapAliasAnalysis.cc	/^bool TrapAliasAnalysis::hasArgAnno(llvm::ImmutableCallSite CS, unsigned Idx, llvm::StringRef Str) const {$/;"	f	class:TrapAliasAnalysis
+hasPCHSupport	IntAction.cc	/^	virtual bool hasPCHSupport() const { return true; }$/;"	f	class:__anon2::PreprocessAction
+host	Makefile	/^host = x86_64-unknown-linux-gnu$/;"	m
+host_alias	Makefile	/^host_alias = $/;"	m
+host_cpu	Makefile	/^host_cpu = x86_64$/;"	m
+host_os	Makefile	/^host_os = linux-gnu$/;"	m
+host_triplet	Makefile	/^host_triplet = x86_64-unknown-linux-gnu$/;"	m
+host_vendor	Makefile	/^host_vendor = unknown$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+i	TrapLib.cc	/^	llvm::inst_iterator i, e;$/;"	v
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+insertTrapCall	TrapGen.cc	/^void insertTrapCall($/;"	f
+install_sh	Makefile	/^install_sh = ${SHELL} \/home\/xqx\/kint\/xi-int\/build-aux\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+intersectWith	IntRange.cc	/^IntRange IntRange::intersectWith(const IntRange &CR) const {$/;"	f	class:IntRange
+isBackEdge	RangeInfo.cc	/^bool RangeInfo::isBackEdge(const Edge &E)$/;"	f	class:RangeInfo
+isBackEdge	TrapSat.cc	/^	bool isBackEdge(const Edge &E) const {$/;"	f	struct:__anon17::TrapSat	file:
+isBranchUG	TautologicalCompare.cc	/^static bool isBranchUG(llvm::BasicBlock *BB, llvm::Value *V) {$/;"	f	file:
+isCommutative	Trap.h	/^bool isCommutative(llvm::StringRef Name) {$/;"	f	namespace:Trap
+isEmpty	RangeWorkList.h	/^    bool isEmpty() {$/;"	f	class:RangeWorkList
+isEmpty	VRMap.h	/^    bool isEmpty() {$/;"	f	class:VRMap
+isFunctionPointer	CallInfo.cc	/^bool CallInfo::isFunctionPointer(llvm::Type *T)$/;"	f	class:CallInfo
+isKnownCmp	TautologicalCompare.cc	/^bool TautologicalCompare::isKnownCmp(llvm::ICmpInst *I) {$/;"	f	class:TautologicalCompare
+isLastField	RewriteAction.cc	/^	bool isLastField(clang::Expr *E) {$/;"	f	class:__anon19::RewriteVisitor	file:
+isStackAndIntPointers	TrapAliasAnalysis.cc	/^static bool isStackAndIntPointers(llvm::Value *V0, llvm::Value *V1) {$/;"	f	file:
+isTaint	TaintInfo.cc	/^bool TaintInfo::isTaint(llvm::Value *V)$/;"	f	class:TaintInfo
+isTaintSource	TaintInfo.cc	/^bool TaintInfo::isTaintSource(const std::string &sID)$/;"	f	class:TaintInfo
+isUG	TautologicalCompare.cc	/^static bool isUG(llvm::Value *Cond, llvm::Value *V) {$/;"	f	file:
+isUnknown	ValueNode.h	/^    bool isUnknown() {$/;"	f	struct:ValueNode
+isa	Trap.h	/^bool isa(const llvm::Instruction *I) {$/;"	f	namespace:Trap
+ite	SMTSolver.h	/^	SMTExpr ite(SMTExpr Cond, SMTExpr TrueExpr, SMTExpr FalseExpr) {$/;"	f	class:BoolectorSolver
+ite	SMTSolver.h	/^	SMTExpr ite(SMTExpr Cond, SMTExpr TrueExpr, SMTExpr FalseExpr) {$/;"	f	class:Z3Solver
+keep	IntermediateFile.cc	/^void IntermediateFile::keep() {$/;"	f	class:IntermediateFile
+land	SMTSolver.h	/^	SMTExpr land(SMTExpr L, SMTExpr R) { return bvand(L, R); }$/;"	f	class:BoolectorSolver
+land	SMTSolver.h	/^	SMTExpr land(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+lfalse	SMTSolver.h	/^	SMTExpr lfalse() {$/;"	f	class:BoolectorSolver
+lfalse	SMTSolver.h	/^	SMTExpr lfalse() {$/;"	f	class:Z3Solver
+lib_LTLIBRARIES	Makefile	/^lib_LTLIBRARIES = libcint.la libintsat.la libintmatch.la libsysctlrange.la$/;"	m
+libcint_la_LIBADD	Makefile	/^libcint_la_LIBADD =$/;"	m
+libcint_la_OBJECTS	Makefile	/^libcint_la_OBJECTS = $(am_libcint_la_OBJECTS)$/;"	m
+libcint_la_SOURCES	Makefile	/^libcint_la_SOURCES = IntAction.cc \\$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libintmatch_la_LIBADD	Makefile	/^libintmatch_la_LIBADD =$/;"	m
+libintmatch_la_OBJECTS	Makefile	/^libintmatch_la_OBJECTS = $(am_libintmatch_la_OBJECTS)$/;"	m
+libintmatch_la_SOURCES	Makefile	/^libintmatch_la_SOURCES = TautologicalCompare.cc$/;"	m
+libintsat_la_CPPFLAGS	Makefile	/^libintsat_la_CPPFLAGS = -I$(top_builddir)\/lib$/;"	m
+libintsat_la_DEPENDENCIES	Makefile	/^libintsat_la_DEPENDENCIES = $(am__DEPENDENCIES_1)$/;"	m
+libintsat_la_LDFLAGS	Makefile	/^libintsat_la_LDFLAGS = -L$(top_builddir)\/lib -R '$(abs_top_builddir)\/lib'$/;"	m
+libintsat_la_LIBADD	Makefile	/^libintsat_la_LIBADD = $(SMT_LIBADD)$/;"	m
+libintsat_la_LINK	Makefile	/^libintsat_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \\$/;"	m
+libintsat_la_OBJECTS	Makefile	/^libintsat_la_OBJECTS = $(am_libintsat_la_OBJECTS)$/;"	m
+libintsat_la_SOURCES	Makefile	/^libintsat_la_SOURCES = TrapLib.cc TrapSat.cc TrapSatMP.cc$/;"	m
+libsysctlrange_la_LIBADD	Makefile	/^libsysctlrange_la_LIBADD =$/;"	m
+libsysctlrange_la_OBJECTS	Makefile	/^libsysctlrange_la_OBJECTS = $(am_libsysctlrange_la_OBJECTS)$/;"	m
+libsysctlrange_la_SOURCES	Makefile	/^libsysctlrange_la_SOURCES = SysctlRange.cc$/;"	m
+llvm	IntermediateFile.h	/^namespace llvm {$/;"	n
+llvm	SMTSolver.h	/^namespace llvm {$/;"	n
+llvm	Trap.h	/^namespace llvm {$/;"	n
+llvm	TrapLib.h	/^namespace llvm {$/;"	n
+lnot	SMTSolver.h	/^	SMTExpr lnot(SMTExpr R) {$/;"	f	class:BoolectorSolver
+lnot	SMTSolver.h	/^	SMTExpr lnot(SMTExpr R) {$/;"	f	class:Z3Solver
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+lor	SMTSolver.h	/^	SMTExpr lor(SMTExpr L, SMTExpr R) { return bvor(L, R); }$/;"	f	class:BoolectorSolver
+lor	SMTSolver.h	/^	SMTExpr lor(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+lt_ECHO	Makefile	/^lt_ECHO = echo$/;"	m
+ltrue	SMTSolver.h	/^	SMTExpr ltrue() {$/;"	f	class:BoolectorSolver
+ltrue	SMTSolver.h	/^	SMTExpr ltrue() {$/;"	f	class:Z3Solver
+main	Linker.cc	/^int main(int argc, char **argv)$/;"	f
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+markIn	TrapLinux.cc	/^void TrapLinux::markIn(llvm::Module &M) {$/;"	f	class:TrapLinux
+markNoAlias	TrapLinux.cc	/^void TrapLinux::markNoAlias(llvm::Module &M) {$/;"	f	class:TrapLinux
+markNoCapture	TrapLinux.cc	/^void TrapLinux::markNoCapture(llvm::Module &M) {$/;"	f	class:TrapLinux
+markOverflow	Overflow.cc	/^	void markOverflow(llvm::Value *V) {$/;"	f	struct:__anon4::Overflow	file:
+markReadNone	TrapLinux.cc	/^void TrapLinux::markReadNone(llvm::Module &M) {$/;"	f	class:TrapLinux
+markReadOnly	TrapLinux.cc	/^void TrapLinux::markReadOnly(llvm::Module &M) {$/;"	f	class:TrapLinux
+markTaint	TaintInfo.cc	/^bool TaintInfo::markTaint(const std::string &sID, bool isSource = false)$/;"	f	class:TaintInfo
+max_frame_size	TrapLib.cc	/^	SMTExpr max_frame_size = SMT.get(&LI);$/;"	v
+max_jumbo_frame_size	TrapLib.cc	/^	SMTExpr max_jumbo_frame_size = SMT.bvconst(SMT.bvwidth(max_frame_size), 0x3F00);$/;"	v
+maxnum	TrapLib.cc	/^	SMTExpr maxnum = SMT.get(CS.getArgument(2));$/;"	v
+mayCompatible	TrapAliasAnalysis.cc	/^bool TrapAliasAnalysis::mayCompatible(llvm::Type *T0, llvm::Type *T1) {$/;"	f	class:TrapAliasAnalysis
+min_ethernet_frame_size	TrapLib.cc	/^	SMTExpr min_ethernet_frame_size = SMT.bvconst(SMT.bvwidth(max_frame_size), 64);$/;"	v
+min_ethernet_frame_size	TrapLib.cc	/^	SMTExpr min_ethernet_frame_size = SMT.bvconst(SMT.bvwidth(min_frame_size), 64);$/;"	v
+min_frame_size	TrapLib.cc	/^	SMTExpr min_frame_size = SMT.get(&LI);$/;"	v
+mk_fresh	TrapSat.cc	/^	SMTExpr mk_fresh(llvm::Value *V) {$/;"	f	struct:__anon17::TrapSat	file:
+mk_iszero	TrapSat.cc	/^	SMTExpr mk_iszero(SMTExpr R) {$/;"	f	struct:__anon17::TrapSat	file:
+mk_nary	TrapSat.cc	/^	SMTExpr mk_nary(const llvm::SCEVNAryExpr *S) {$/;"	f	struct:__anon17::TrapSat	file:
+mk_range	TrapSat.cc	/^	SMTExpr mk_range(llvm::Value *V, const llvm::ConstantRange &CR) {$/;"	f	struct:__anon17::TrapSat	file:
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+multiply	IntRange.cc	/^IntRange IntRange::multiply(const IntRange &R) const {$/;"	f	class:IntRange
+ne	SMTSolver.h	/^	SMTExpr ne(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+ne	SMTSolver.h	/^	SMTExpr ne(SMTExpr L, SMTExpr R) {$/;"	f	class:Z3Solver
+next_to_clean	TrapLib.cc	/^	SMTExpr next_to_clean = SMT.get(&LI);$/;"	v
+next_to_use	TrapLib.cc	/^	SMTExpr next_to_use = SMT.get(&LI);$/;"	v
+offset	TrapLib.cc	/^	SMTExpr offset = SMT.get(CS.getArgument(2));$/;"	v
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+operator !=	VRMap.h	/^    bool operator != (const VRMap &M) {$/;"	f	class:VRMap
+operator ()	RangeAnalysis.cc	/^        bool operator () (const llvm::APInt &A, const llvm::APInt &B) const {$/;"	f	struct:__anon9::RangeAnalysis::APIntCmp
+operator <	ValueNode.h	/^    bool operator < (const ValueNode &A) const {$/;"	f	struct:ValueNode
+operator <<	JSONWriter.h	/^	JSONWriter &operator <<(const DictTy &Dict) {$/;"	f	class:JSONWriter
+operator <<	JSONWriter.h	/^	JSONWriter &operator <<(const ListTy &List) {$/;"	f	class:JSONWriter
+operator <<	JSONWriter.h	/^	JSONWriter &operator <<(const char *Str) {$/;"	f	class:JSONWriter
+operator <<	JSONWriter.h	/^	JSONWriter &operator <<(const llvm::StringRef &Str) {$/;"	f	class:JSONWriter
+operator <<	JSONWriter.h	/^	JSONWriter &operator <<(const std::string &Str) {$/;"	f	class:JSONWriter
+operator =	ValueNode.h	/^    ValueNode& operator = (const ValueNode &A) {$/;"	f	struct:ValueNode
+operator ==	VRMap.h	/^    bool operator == (const VRMap &M) {$/;"	f	class:VRMap
+operator ==	ValueNode.h	/^    bool operator == (const ValueNode &A) const {$/;"	f	struct:ValueNode
+operator []	CallInfo.cc	/^CSList& CallInfo::operator [] (llvm::Function *F) {$/;"	f	class:CallInfo
+operator []	CallInfo.cc	/^FuncSet& CallInfo::operator [] (llvm::CallInst *CI) {$/;"	f	class:CallInfo
+os	IntermediateFile.cc	/^llvm::raw_fd_ostream &IntermediateFile::os() {$/;"	f	class:IntermediateFile
+outputRanges	Linker.h	/^	void outputRanges(llvm::raw_ostream &OS) {$/;"	f	struct:LinkerContext
+outputTaints	Linker.h	/^	void outputTaints(llvm::raw_ostream &OS) {$/;"	f	struct:LinkerContext
+parse	Linker.h	/^	void parse(const char * filename)$/;"	f	struct:LinkerContext
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/int$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/int$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/int$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/int$/;"	m
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+print	SMTSolver.h	/^	void print(Stream &OS, SMTExpr E) {$/;"	f	class:Z3Solver
+print	SMTSolver.h	/^	void print(Stream &OS, SMTExpr E, bool smt = 1) {$/;"	f	class:BoolectorSolver
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+query	SMTSolver.h	/^	int query(SMTExpr E, const Map &, Stream &OS) {$/;"	f	class:Z3Solver
+query	SMTSolver.h	/^	int query(SMTExpr E, const Map &Decls, Stream &OS) {$/;"	f	class:BoolectorSolver
+query	TrapSat.cc	/^	int query(SMTExpr G, SMTExpr E, Stream &OS, unsigned timeout = 0) {$/;"	f	struct:__anon17::TrapSat	file:
+rank_append	TrapSat.cc	/^static inline void rank_append(std::string &rank, const std::string str)$/;"	f	file:
+rank_sink	TrapSat.cc	/^void TrapSat::rank_sink(llvm::Value *V, Map &M, llvm::StringRef type) {$/;"	f	class:TrapSat
+rank_taint	TrapSat.cc	/^void TrapSat::rank_taint(llvm::Value *V, Dict &D)$/;"	f	class:TrapSat
+release	SMTSolver.h	/^	void release(SMTExpr E) {$/;"	f	class:BoolectorSolver
+release	SMTSolver.h	/^	void release(SMTExpr) { }$/;"	f	class:Z3Solver
+releaseMemory	GEPUnroll.cc	/^	virtual void releaseMemory() {$/;"	f	struct:__anon3::GEPUnroll
+releaseMemory	PHICombine.cc	/^	virtual void releaseMemory() {$/;"	f	struct:__anon10::PHICombine
+releaseMemory	TrapSat.cc	/^void TrapSat::releaseMemory() {$/;"	f	class:TrapSat
+replaceInstWithPHINode	PHICombine.cc	/^	void replaceInstWithPHINode(llvm::Instruction *I, llvm::PHINode *PN) {$/;"	f	struct:__anon10::PHICombine	file:
+report	TautologicalCompare.cc	/^bool TautologicalCompare::report(const llvm::Twine &Msg, llvm::Instruction *I) {$/;"	f	class:TautologicalCompare
+ret	TrapLib.cc	/^	SMTExpr ret = SMT.get(CS.getInstruction());$/;"	v
+rewrite	GEPUnroll.cc	/^	void rewrite(llvm::Use *U, const llvm::ConstantRange &R,$/;"	f	struct:__anon3::GEPUnroll	file:
+rewrite	PHICombine.cc	/^	bool rewrite(llvm::BinaryOperator *I) {$/;"	f	struct:__anon10::PHICombine	file:
+rewrite	PHICombine.cc	/^	bool rewrite(llvm::CastInst *I) {$/;"	f	struct:__anon10::PHICombine	file:
+rewriteCast	RewriteAction.cc	/^	void rewriteCast(clang::CastExpr *E) {$/;"	f	class:__anon19::RewriteVisitor	file:
+rewriteIndex	RewriteAction.cc	/^	void rewriteIndex(clang::Expr *E, const llvm::Twine &Op) {$/;"	f	class:__anon19::RewriteVisitor	file:
+rewriteL	PHICombine.cc	/^	llvm::PHINode *rewriteL(llvm::BinaryOperator *I, llvm::PHINode *LHS, llvm::Value *RHS) {$/;"	f	struct:__anon10::PHICombine	file:
+rewriteLR	PHICombine.cc	/^	llvm::PHINode *rewriteLR(llvm::BinaryOperator *I, llvm::PHINode *LHS, llvm::PHINode *RHS) {$/;"	f	struct:__anon10::PHICombine	file:
+rewriteR	PHICombine.cc	/^	llvm::PHINode *rewriteR(llvm::BinaryOperator *I, llvm::Value *LHS, llvm::PHINode *RHS) {$/;"	f	struct:__anon10::PHICombine	file:
+run	TrapLib.cc	/^SMTExpr TrapLib::run(SMTSolver &SMT, llvm::Value *V) {$/;"	f	class:TrapLib
+runOnAnnotationExp	RangeAnalysis.cc	/^	IntRange runOnAnnotationExp(llvm::CallInst *CI, AnnotationExp E) {$/;"	f	struct:__anon9::RangeAnalysis	file:
+runOnAnnotationTerm	RangeAnalysis.cc	/^	IntRange runOnAnnotationTerm(llvm::CallInst *CI, AnnotationTerm Term) {$/;"	f	struct:__anon9::RangeAnalysis	file:
+runOnBasicBlockPredicate	RangeAnalysis.cc	/^    void runOnBasicBlockPredicate(llvm::BasicBlock *BB) {$/;"	f	struct:__anon9::RangeAnalysis	file:
+runOnCondition	RangeAnalysis.cc	/^VRMap RangeAnalysis::runOnCondition(llvm::Value *V, bool TargetRes) {$/;"	f	class:RangeAnalysis
+runOnFunction	GEPUnroll.cc	/^	virtual bool runOnFunction(llvm::Function &F) {$/;"	f	struct:__anon3::GEPUnroll
+runOnFunction	Hoist.cc	/^	virtual bool runOnFunction(llvm::Function &F) {$/;"	f	class:__anon1::Hoist
+runOnFunction	LowerAnnotation.cc	/^bool LowerAnnotation::runOnFunction(llvm::Function &F) {$/;"	f	class:LowerAnnotation
+runOnFunction	LowerOverflow.cc	/^bool LowerOverflow::runOnFunction(llvm::Function &F) {$/;"	f	class:LowerOverflow
+runOnFunction	Overflow.cc	/^bool Overflow::runOnFunction(llvm::Function &F) {$/;"	f	class:Overflow
+runOnFunction	PHICombine.cc	/^	virtual bool runOnFunction(llvm::Function &F) {$/;"	f	struct:__anon10::PHICombine
+runOnFunction	SPConstantProp.cc	/^	virtual bool runOnFunction(llvm::Function &F) {$/;"	f	struct:__anon24::SPConstProp
+runOnFunction	TautologicalCompare.cc	/^bool TautologicalCompare::runOnFunction(llvm::Function &F) {$/;"	f	class:TautologicalCompare
+runOnFunction	TrapAliasAnalysis.cc	/^	virtual bool runOnFunction(llvm::Function &) {$/;"	f	struct:__anon16::TrapAliasAnalysis
+runOnFunction	TrapCombine.cc	/^bool TrapCombine::runOnFunction(llvm::Function &F) {$/;"	f	class:TrapCombine
+runOnFunction	TrapLoop.cc	/^bool TrapLoop::runOnFunction(llvm::Function &F) {$/;"	f	class:TrapLoop
+runOnFunction	TrapSat.cc	/^bool TrapSat::runOnFunction(llvm::Function &F) {$/;"	f	class:TrapSat
+runOnFunction	TrapSimplify.cc	/^	virtual bool runOnFunction(llvm::Function &F) {$/;"	f	struct:__anon20::TrapSimplify
+runOnModule	RangeAnalysis.cc	/^bool RangeAnalysis::runOnModule(llvm::Module &M) {$/;"	f	class:RangeAnalysis
+runOnModule	SysctlRange.cc	/^bool SysctlRange::runOnModule(Module &M) {$/;"	f	class:SysctlRange
+runOnModule	TrapGen.cc	/^	virtual bool runOnModule(llvm::Module &M) {$/;"	f	struct:TrapGen
+runOnModule	TrapLinux.cc	/^	virtual bool runOnModule(llvm::Module &M) {$/;"	f	class:__anon25::TrapLinux
+runOnModule	TrapSatMP.cc	/^bool TrapSatMP::runOnModule(llvm::Module &M) {$/;"	f	class:TrapSatMP
+runOnTerminator	RangeAnalysis.cc	/^    VRMap runOnTerminator(llvm::BasicBlock *PredBB, llvm::BasicBlock *BB) {$/;"	f	struct:__anon9::RangeAnalysis	file:
+s_blocksize	TrapLib.cc	/^	SMTExpr s_blocksize = SMT.get(&LI);$/;"	v
+safeToIgnore	TrapAliasAnalysis.cc	/^bool TrapAliasAnalysis::safeToIgnore(llvm::ImmutableCallSite CS) {$/;"	f	class:TrapAliasAnalysis
+safeUnion	RangeInfo.cc	/^bool RangeInfo::safeUnion(llvm::ConstantRange &CR, const llvm::ConstantRange &R)$/;"	f	class:RangeInfo
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sdiv	IntRange.cc	/^IntRange IntRange::sdiv(const IntRange &R) const {$/;"	f	class:IntRange
+setValueRange	RangeAnalysis.cc	/^    bool setValueRange(llvm::Value *V, IntRange R) {$/;"	f	struct:__anon9::RangeAnalysis	file:
+setValueRange	VRMap.h	/^    bool setValueRange(llvm::Value *V, IntRange R) {$/;"	f	class:VRMap
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+shift	SMTSolver.h	/^	SMTExpr shift(SMTExpr L, SMTExpr R) {$/;"	f	class:BoolectorSolver
+shl	IntRange.cc	/^IntRange IntRange::shl(const IntRange &R) const {$/;"	f	class:IntRange
+sign_extend	SMTSolver.h	/^	SMTExpr sign_extend(unsigned i, SMTExpr R) {$/;"	f	class:BoolectorSolver
+sign_extend	SMTSolver.h	/^	SMTExpr sign_extend(unsigned i, SMTExpr R) {$/;"	f	class:Z3Solver
+simplifyPtrSub	TrapSimplify.cc	/^bool TrapSimplify::simplifyPtrSub(llvm::Instruction *I) {$/;"	f	class:TrapSimplify
+size	TrapLib.cc	/^	SMTExpr size = SMT.get(CS.getArgument(1));$/;"	v
+smax	TrapLib.cc	/^static SMTExpr smax(SMTSolver &SMT, llvm::Value *V, int64_t val) {$/;"	f	file:
+smin	TrapLib.cc	/^static SMTExpr smin(SMTSolver &SMT, llvm::Value *V, int64_t val) {$/;"	f	file:
+sminmax	TrapLib.cc	/^static SMTExpr sminmax(SMTSolver &SMT, llvm::Value *V, int64_t min, int64_t max) {$/;"	f	file:
+srcdir	Makefile	/^srcdir = .$/;"	m
+srem	IntRange.cc	/^IntRange IntRange::srem(const IntRange &R) const {$/;"	f	class:IntRange
+str	IntermediateFile.h	/^	const std::string &str() const { return Filename; }$/;"	f	class:IntermediateFile
+stripConstTrap	TrapSimplify.cc	/^bool TrapSimplify::stripConstTrap(llvm::Instruction *I) {$/;"	f	class:TrapSimplify
+stripPath	Linker.h	/^static inline std::string stripPath(const std::string &path)$/;"	f
+stripSDivRemTrap	TrapSimplify.cc	/^bool TrapSimplify::stripSDivRemTrap(llvm::Instruction *I) {$/;"	f	class:TrapSimplify
+strip_cast	SysctlRange.cc	/^static T *strip_cast(S *V) {$/;"	f	file:
+subdir	Makefile	/^subdir = src$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+szcnt	TrapLib.cc	/^	unsigned szcnt = SMT.bvwidth(cnt);$/;"	v
+szmax	TrapLib.cc	/^	unsigned szmax = SMT.bvwidth(maxnum);$/;"	v
+szret	TrapLib.cc	/^	unsigned szret = SMT.bvwidth(ret);$/;"	v
+tail	TrapLib.cc	/^	SMTExpr tail = SMT.get(&LI);$/;"	v
+takeModule	AnnotateAction.cc	/^llvm::Module * AnnotateAction::takeModule()$/;"	f	class:AnnotateAction
+target_alias	Makefile	/^target_alias = $/;"	m
+timedQuery	TrapSat.cc	/^	int timedQuery(SMTExpr Q, Stream &OS, unsigned timeout) {$/;"	f	struct:__anon17::TrapSat	file:
+toString	TrapSat.cc	/^	void toString(SMTExpr E, std::string &Str) {$/;"	f	struct:__anon17::TrapSat	file:
+top_build_prefix	Makefile	/^top_build_prefix = ..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+tryEnque	RangeWorkList.h	/^    void tryEnque(llvm::Value *V) {$/;"	f	class:RangeWorkList
+umax	TrapLib.cc	/^static SMTExpr umax(SMTSolver &SMT, llvm::Value *V, uint64_t val) {$/;"	f	file:
+umin	TrapLib.cc	/^static SMTExpr umin(SMTSolver &SMT, llvm::Value *V, uint64_t val) {$/;"	f	file:
+uminmax	TrapLib.cc	/^static SMTExpr uminmax(SMTSolver &SMT, llvm::Value *V, uint64_t min, uint64_t max) {$/;"	f	file:
+unionFuncPtrs	CallInfo.cc	/^bool CallInfo::unionFuncPtrs(FuncSet &S, llvm::StringRef sID)$/;"	f	class:CallInfo
+unionFuncPtrs	CallInfo.cc	/^bool CallInfo::unionFuncPtrs(FuncSet &dst, const FuncSet &src)$/;"	f	class:CallInfo
+unionRange	RangeInfo.cc	/^bool RangeInfo::unionRange(llvm::BasicBlock *BB, llvm::Value *V,$/;"	f	class:RangeInfo
+unionRange	RangeInfo.cc	/^bool RangeInfo::unionRange(llvm::StringRef sID, const llvm::ConstantRange &R,$/;"	f	class:RangeInfo
+unionWith	VRMap.h	/^    void unionWith(const VRMap &A) {$/;"	f	class:VRMap
+update	RangeWorkList.h	/^    void update(llvm::Value* V) {$/;"	f	class:RangeWorkList
+updateCnt	RangeAnalysis.cc	/^    std::map<llvm::Value*, unsigned int> updateCnt;$/;"	m	struct:__anon9::RangeAnalysis	file:
+updateRangeFor	RangeInfo.cc	/^bool RangeInfo::updateRangeFor(llvm::BasicBlock *BB)$/;"	f	class:RangeInfo
+updateRangeFor	RangeInfo.cc	/^bool RangeInfo::updateRangeFor(llvm::Function *F)$/;"	f	class:RangeInfo
+updateRangeFor	RangeInfo.cc	/^bool RangeInfo::updateRangeFor(llvm::Instruction *I)$/;"	f	class:RangeInfo
+updateRangeFor	RangeInfo.cc	/^bool RangeInfo::updateRangeFor(llvm::Module *M)$/;"	f	class:RangeInfo
+updateTaint	TaintInfo.cc	/^bool TaintInfo::updateTaint(llvm::Function *F)$/;"	f	class:TaintInfo
+updateTaint	TaintInfo.cc	/^bool TaintInfo::updateTaint(llvm::Module *M)$/;"	f	class:TaintInfo
+urem	IntRange.cc	/^IntRange IntRange::urem(const IntRange &R) const {$/;"	f	class:IntRange
+verbose	RangeAnalysis.cc	/^    bool verbose;$/;"	m	struct:__anon9::RangeAnalysis	file:
+visitAddExpr	TrapSat.cc	/^	SMTExpr visitAddExpr(const llvm::SCEVAddExpr *S) {$/;"	f	struct:__anon17::TrapSat
+visitAddRecExpr	TrapSat.cc	/^	SMTExpr visitAddRecExpr(const llvm::SCEVAddRecExpr *S) {$/;"	f	struct:__anon17::TrapSat
+visitBinaryOp	RangeInfo.cc	/^llvm::ConstantRange RangeInfo::visitBinaryOp(llvm::BinaryOperator *BO)$/;"	f	class:RangeInfo
+visitBinaryOperator	Overflow.cc	/^bool Overflow::visitBinaryOperator(llvm::BinaryOperator *I) {$/;"	f	class:Overflow
+visitBinaryOperator	RangeAnalysis.cc	/^void RangeAnalysis::visitBinaryOperator(llvm::BinaryOperator &I) {$/;"	f	class:RangeAnalysis
+visitBinaryOperator	TrapSat.cc	/^SMTExpr TrapSat::visitBinaryOperator(llvm::BinaryOperator *I) {$/;"	f	class:TrapSat
+visitBranchInst	RangeInfo.cc	/^void RangeInfo::visitBranchInst(llvm::BranchInst *BI, llvm::BasicBlock *BB, $/;"	f	class:RangeInfo
+visitCallInst	RangeAnalysis.cc	/^void RangeAnalysis::visitCallInst(llvm::CallInst &I) {$/;"	f	class:RangeAnalysis
+visitCallInst	RangeInfo.cc	/^bool RangeInfo::visitCallInst(llvm::CallInst *CI)$/;"	f	class:RangeInfo
+visitCastInst	RangeInfo.cc	/^llvm::ConstantRange RangeInfo::visitCastInst(llvm::CastInst *CI)$/;"	f	class:RangeInfo
+visitCmpInst	RangeAnalysis.cc	/^    void visitCmpInst(llvm::CmpInst &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitConstant	TrapSat.cc	/^	SMTExpr visitConstant(const llvm::SCEVConstant *S) {$/;"	f	struct:__anon17::TrapSat
+visitExtractValueInst	LowerOverflow.cc	/^bool LowerOverflow::visitExtractValueInst(llvm::ExtractValueInst *I) {$/;"	f	class:LowerOverflow
+visitExtractValueInst	RangeAnalysis.cc	/^	void visitExtractValueInst(llvm::ExtractValueInst &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitExtractValueInst	TrapSat.cc	/^SMTExpr TrapSat::visitExtractValueInst(llvm::ExtractValueInst *I) {$/;"	f	class:TrapSat
+visitICmp	Overflow.cc	/^llvm::CallInst *Overflow::visitICmp(llvm::CmpInst::Predicate Pred,$/;"	f	class:Overflow
+visitICmpInst	Overflow.cc	/^bool Overflow::Overflow::visitICmpInst(llvm::ICmpInst *I) {$/;"	f	class:Overflow::Overflow
+visitICmpInst	TrapSat.cc	/^SMTExpr TrapSat::visitICmpInst(llvm::ICmpInst *I) {$/;"	f	class:TrapSat
+visitInstruction	RangeAnalysis.cc	/^    void visitInstruction(llvm::Instruction &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitLoadInst	Hoist.cc	/^bool Hoist::visitLoadInst(llvm::LoadInst *I) {$/;"	f	class:Hoist
+visitLoadInst	RangeAnalysis.cc	/^    void visitLoadInst(llvm::LoadInst &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitMulExpr	TrapSat.cc	/^	SMTExpr visitMulExpr(const llvm::SCEVMulExpr *S) {$/;"	f	struct:__anon17::TrapSat
+visitPHINode	RangeAnalysis.cc	/^    void visitPHINode(llvm::PHINode &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitPHINode	RangeInfo.cc	/^llvm::ConstantRange RangeInfo::visitPHINode(llvm::PHINode *PHI)$/;"	f	class:RangeInfo
+visitPtrToIntInst	RangeAnalysis.cc	/^    void visitPtrToIntInst(llvm::PtrToIntInst &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitReturnInst	RangeInfo.cc	/^bool RangeInfo::visitReturnInst(llvm::ReturnInst *RI)$/;"	f	class:RangeInfo
+visitSExtInst	RangeAnalysis.cc	/^    void visitSExtInst(llvm::SExtInst &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitSMaxExpr	TrapSat.cc	/^	SMTExpr visitSMaxExpr(const llvm::SCEVSMaxExpr *S) {$/;"	f	struct:__anon17::TrapSat
+visitSelectInst	RangeAnalysis.cc	/^	void visitSelectInst(llvm::SelectInst &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitSelectInst	RangeInfo.cc	/^llvm::ConstantRange RangeInfo::visitSelectInst(llvm::SelectInst *SI)$/;"	f	class:RangeInfo
+visitSelectInst	TrapSat.cc	/^SMTExpr TrapSat::visitSelectInst(llvm::SelectInst *I) {$/;"	f	class:TrapSat
+visitSignExtendExpr	TrapSat.cc	/^	SMTExpr visitSignExtendExpr(const llvm::SCEVSignExtendExpr *S) {$/;"	f	struct:__anon17::TrapSat
+visitStoreInst	Overflow.cc	/^bool Overflow::visitStoreInst(llvm::StoreInst *I) {$/;"	f	class:Overflow
+visitStoreInst	RangeAnalysis.cc	/^    void visitStoreInst(llvm::StoreInst &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitStoreInst	RangeInfo.cc	/^bool RangeInfo::visitStoreInst(llvm::StoreInst *SI)$/;"	f	class:RangeInfo
+visitSwitchInst	RangeInfo.cc	/^void RangeInfo::visitSwitchInst(llvm::SwitchInst *SI, llvm::BasicBlock *BB, $/;"	f	class:RangeInfo
+visitTerminator	RangeInfo.cc	/^void RangeInfo::visitTerminator(llvm::TerminatorInst *I, llvm::BasicBlock *BB,$/;"	f	class:RangeInfo
+visitTerminatorInst	RangeAnalysis.cc	/^    void visitTerminatorInst(llvm::TerminatorInst &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitTruncInst	Overflow.cc	/^bool Overflow::visitTruncInst(llvm::TruncInst *I) {$/;"	f	class:Overflow
+visitTruncInst	RangeAnalysis.cc	/^    void visitTruncInst(llvm::TruncInst &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitTruncateExpr	TrapSat.cc	/^	SMTExpr visitTruncateExpr(const llvm::SCEVTruncateExpr *S) {$/;"	f	struct:__anon17::TrapSat
+visitUDivExpr	TrapSat.cc	/^	SMTExpr visitUDivExpr(const llvm::SCEVUDivExpr *S) {$/;"	f	struct:__anon17::TrapSat
+visitUMaxExpr	TrapSat.cc	/^	SMTExpr visitUMaxExpr(const llvm::SCEVUMaxExpr *S) {$/;"	f	struct:__anon17::TrapSat
+visitUndefValue	TrapSat.cc	/^SMTExpr TrapSat::visitUndefValue(llvm::UndefValue *I) {$/;"	f	class:TrapSat
+visitUnknown	TrapSat.cc	/^	SMTExpr visitUnknown(const llvm::SCEVUnknown *S) {$/;"	f	struct:__anon17::TrapSat
+visitZExtInst	RangeAnalysis.cc	/^    void visitZExtInst(llvm::ZExtInst &I) {$/;"	f	struct:__anon9::RangeAnalysis
+visitZeroExtendExpr	TrapSat.cc	/^	SMTExpr visitZeroExtendExpr(const llvm::SCEVZeroExtendExpr *S) {$/;"	f	struct:__anon17::TrapSat
+warnConstCondition	TautologicalCompare.cc	/^void TautologicalCompare::warnConstCondition(llvm::ICmpInst *I) {$/;"	f	class:TautologicalCompare
+warnOverflowCheck	TautologicalCompare.cc	/^const char *TautologicalCompare::warnOverflowCheck(llvm::CmpInst::Predicate Pred, llvm::Value *L, llvm::Value *R) {$/;"	f	class:TautologicalCompare
+warnOverflowCheck	TautologicalCompare.cc	/^void TautologicalCompare::warnOverflowCheck(llvm::ICmpInst *I) {$/;"	f	class:TautologicalCompare
+writeString	JSONWriter.h	/^	JSONWriter &writeString(llvm::StringRef Str) {$/;"	f	class:JSONWriter
+zero	TrapLib.cc	/^	SMTExpr zero = SMT.bvconst(SMT.bvwidth(dev), 0);$/;"	v
+zero	TrapLib.cc	/^	SMTExpr zero = SMT.bvconst(SMT.bvwidth(s_blocksize), 0);$/;"	v
+zero	TrapLib.cc	/^	SMTExpr zero = SMT.bvconst(SMT.bvwidth(tail), 0);$/;"	v
+zero_extend	SMTSolver.h	/^	SMTExpr zero_extend(unsigned i, SMTExpr R) {$/;"	f	class:BoolectorSolver
+zero_extend	SMTSolver.h	/^	SMTExpr zero_extend(unsigned i, SMTExpr R) {$/;"	f	class:Z3Solver
+~BoolectorSolver	SMTSolver.h	/^	~BoolectorSolver() {$/;"	f	class:BoolectorSolver
+~IntermediateFile	IntermediateFile.cc	/^IntermediateFile::~IntermediateFile() {$/;"	f	class:IntermediateFile
+~Z3Solver	SMTSolver.h	/^	~Z3Solver() { Z3_del_context(ctx); }$/;"	f	class:Z3Solver

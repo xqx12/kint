@@ -1,0 +1,26 @@
+fix assertions for integers of more than 64 bits.
+
+support do_div(), popcnt
+
+rank incorrect checks?
+
+more pointer arithmetic, e.g., p + len?
+- get rid of RewriteAction
+
+kmalloc(size) != NULL
+=> size <= KMALLOC_MAX_SIZE
+
+x < UINT_MAX / y (x, y are 64 bits)
+=> nooverflow((u32)x, (u32)y) ??
+
+taint
+- only add endian source to network/usb/disk (could be done via filename)
+- untaint the result of strlen and bit operations
+
+range
+- sysctl
+
+watch list:
+
+CVE-2011-3209 (kernel)
+https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-3209

@@ -1,0 +1,60 @@
+#!/usr/bin/env python
+import json
+import os
+import re
+import sys
+from cStringIO import StringIO
+import multiprocessing
+import linecache
+
+
+def jconv(dat):
+	s = ""
+	nto = 0
+	nr = len(dat["items"])
+	for i in dat["items"]:
+		if (i["status"] == "timeout"):
+			nto = nto + 1
+
+		if not "file" in i:
+			continue
+		if i["status"] != "sat":
+			continue
+		if not "rank" in i:
+			continue
+		m = re.search('linux-3\.[^/]*/(.*)', i["file"]);
+		if m:
+			i["file"] = m.group(0);
+		s = s + "FUNC: %(function)s :: %(block)s" %i
+		s = s + "\nFILE: %(file)s:%(line)s" % i
+		s = s + "\nTRAP: %(trap)s\t%(status)s" % i
+		s = s + "\nRANK: %(rank)s" % i
+		s = s + "\n" + "=" * 70 + "\n"
+		s = s + "  " + linecache.getline( \
+				i["file"], int(i["line"])).lstrip() + "\n"
+	return (s, nr, nto)
+
+def worker(jfn):
+	try:
+		dat = json.load(open(jfn.strip()))
+		return jconv(dat)
+	except:
+		return None
+
+def main():
+	jfns = sys.argv[1:]
+	if len(jfns) == 0:
+		jfns = sys.stdin.readlines()
+	pool = multiprocessing.Pool(multiprocessing.cpu_count() * 2)
+	results = pool.map(worker, jfns)
+	total = totalto = 0
+	for (r, nr, nto) in results:
+		total += nr
+		totalto += nto
+		if r:
+			print r,
+	print >>sys.stderr, "* Total queries:", total
+	print >>sys.stderr, "* Timeout:", totalto
+
+if __name__ == "__main__":
+	main()

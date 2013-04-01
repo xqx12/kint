@@ -1,0 +1,31 @@
+To build:
+  % autoreconf -fvi
+  % ./configure
+  % make
+
+To check:
+  % ./tools/cint /some/code.c ...
+  ## cint outputs llvm bytecode to code.bc
+  % ./tools/intsat code.bc
+  % ./tools/bugreport
+
+
+LLVM/Clang Build Instruction
+============================
+
+Build the latest LLVM & Clang, as detailed at
+
+	http://clang.llvm.org/get_started.html
+
+We use the following parameters to LLVM's configure.
+
+	--enable-optimized --enable-targets=host --enable-bindings=none --enable-shared --enable-debug-symbols
+
+Linux CVE List
+==============
+
+Go to `docs', type `make', and open linux.html in your browser.
+
+NB: Chrome doesn't work if you view the web page locally due to security
+overkill.  Launch Chrome with --disable-web-security, or upload files to
+a remote web server for browsing, if you really like Chrome so badly.

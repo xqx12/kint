@@ -1,0 +1,287 @@
+drm
+===
+
+drm
+http://git.kernel.org/linus/a5cd3351
+CVE-2012-0044
+
+drm: vmwgfx
+http://git.kernel.org/linus/bab9efc2
+
+drm: vmwgfx
+http://git.kernel.org/linus/8a783896
+http://lists.freedesktop.org/archives/dri-devel/2011-December/017304.html
+previous commits:
+	e133e737
+	d3216a0c
+vmwgfx commit:
+	2d4ac332 (tried to fix it, though still wrong)
+	1dac6515 (bad check: overflow)
+
+drm: nouveau:
+http://git.kernel.org/linus/44ab8cc56c45ca781371a4a77f35da19cf5db028
+
+drm: i915 (2)
+http://git.kernel.org/linus/44afb3a04391a74309d16180d1e4f8386fdfa745
+http://git.kernel.org/linus/ed8cd3b2cd61004cab85380c52b1817aca1ca49b
+
+drm: savage (2)
+http://git.kernel.org/linus/6587eb82617f7913c13e750e73e13fa9c829863c
+
+
+input
+=====
+
+input: cma3000_d0x
+http://git.kernel.org/linus/3a7f8fb1
+https://lkml.org/lkml/2011/12/12/45
+
+
+xen
+===
+
+gntdev
+NB: reported by Dan Carpenter earlier
+	http://git.kernel.org/linus/fc6e0c3b
+
+xenbus
+http://git.kernel.org/linus/9e7860cee18241633eddb36a4c34c7b61d8cecbc
+https://lkml.org/lkml/2012/1/3/196
+NB: not exploitable
+
+
+media
+=====
+
+uvc
+http://git.kernel.org/linus/806e23e95f94a27ee445022d724060b9b45cb64a
+
+wl128x (36)
+http://git.kernel.org/linus/a61278037b57b1d75467dcfeb255584d5f11743d
+http://git.kernel.org/linus/d24674c60b6fe790a274d4936bcdc8c482bbd9fe
+http://git.kernel.org/linus/8cc20dd89c9ec807b169c8db42192377da470acc
+
+lgdt330x
+https://lkml.org/lkml/2012/2/14/291
+http://git.kernel.org/linus/34817174fca0c5512c2d5b6ea0fc37a0337ce1d8
+
+v4l2-ctrls (2)
+http://git.kernel.org/linus/0a3475eb618321013dab9ac744201ed09e8061f9
+http://git.kernel.org/linus/5f0049bd69b96537dc7c02755c169fb4ccca3ddf
+
+zoran
+http://git.kernel.org/linus/32898a145404acbebe3256709e012c2830a2043b
+
+
+mtd
+===
+http://patchwork.ozlabs.org/patch/133363/
+http://git.kernel.org/linus/2ff5e1532dd37e1bd8ac72da3f7f0e2b310102fb
+
+
+scsi
+====
+
+aachba
+https://lkml.org/lkml/2011/11/30/428
+NB: pending
+
+iscsi_tcp
+http://git.kernel.org/?p=linux/kernel/git/jejb/scsi-misc-2.6.git;a=commitdiff;h=9ab1bdfbbbc64b5f1196cdb4ead19caf388d9a21
+http://marc.info/?t=132536924300001&r=1&w=2
+
+
+block
+=====
+
+rbd
+http://git.kernel.org/linus/50f7c4c967d0b5acd8e7ba6ab654dc4a7ac869ac
+
+
+infiniband
+
+uverbs (2)
+http://marc.info/?l=linux-rdma&m=133551815516089&w=2
+NB: pending
+
+
+usb
+===
+
+usbtest (2)
+http://git.kernel.org/linus/8bde9a62ee74afa89f593c563e926d163b1f6ada
+http://git.kernel.org/linus/e65cdfae71cecec0fcd43a3f9ac8b5e4ae52db08
+
+
+platform-x86
+============
+
+panasonic-laptop
+http://git.kernel.org/linus/e424fb8cc4e6634c10f8159b1ff5618cf7bab9c6
+
+
+staging
+=======
+
+staging: comedi
+http://git.kernel.org/linus/dfd8ee92
+Previous commit:
+	e384a411
+NB: reported by Dan Carpenter earlier but his patch was broken
+	https://lkml.org/lkml/2011/11/22/633
+
+staging: vt665x (4)
+http://git.kernel.org/linus/201320435d017e8ebd449034547ef0518ec4d056
+http://git.kernel.org/linus/2a58b19fd97c7368c03c027419a2aeb26313adad
+http://git.kernel.org/?p=linux/kernel/git/gregkh/staging.git;a=commitdiff;h=201320435d017e8ebd449034547ef0518ec4d056
+http://git.kernel.org/?p=linux/kernel/git/gregkh/staging.git;a=commitdiff;h=2a58b19fd97c7368c03c027419a2aeb26313adad
+http://driverdev.linuxdriverproject.org/pipermail/devel/2011-November/023092.html
+NB: reported by Dan Rosenberg earlier but never got fixed
+	https://lkml.org/lkml/2010/9/27/413
+
+staging: olpc_dcon
+http://git.kernel.org/linus/91762057f439bb0adb33ca857b6022fda4b1fd69
+http://driverdev.linuxdriverproject.org/pipermail/devel/2011-December/023236.html
+
+
+net
+===
+
+ax25 (8)
+http://git.kernel.org/?p=linux/kernel/git/davem/net-next.git;a=commitdiff;h=be639ac6901a082894771f55c8047d5772de5c27
+https://lkml.org/lkml/2011/11/22/767
+NB: timeout issues, not exploitable
+
+not really fixed (4)
+http://git.kernel.org/linus/ba1cffe0257bcd4d0070bc0e64f8ead97fefd148
+http://patchwork.ozlabs.org/patch/133353/
+previous commit:
+	be639ac6
+
+netrom (3)
+http://git.kernel.org/linus/32288eb4d940b10e40c6d4178fe3a40d1437d2f8
+http://patchwork.ozlabs.org/patch/133354/
+
+can
+http://git.kernel.org/linus/44b0052c5cb4e75389ed3eb9e98c29295a7dadfb
+http://patchwork.ozlabs.org/patch/130649/
+
+sctp
+http://git.kernel.org/linus/c89304b8
+NB: just make the check more correct, not exploitable
+	https://lkml.org/lkml/2011/11/22/720
+
+sctp
+http://git.kernel.org/linus/2692ba61
+http://www.spinics.net/lists/linux-sctp/msg01461.html
+previous commits:
+	8ffd3208
+	810c0719
+	f6778aab
+
+irda
+http://git.kernel.org/linus/7d6c429b263c2f735f3df8c282cc77a8659e5d74
+http://patchwork.ozlabs.org/patch/132626/
+
+rps
+http://git.kernel.org/linus/a0a129f8
+http://patchwork.ozlabs.org/patch/132916/
+
+netfilter
+http://git.kernel.org/linus/c1216382
+
+libceph (4)
+http://git.kernel.org/linus/64486697771cbe219fffcb5c8e2ed9ca4fdf086c
+https://github.com/ceph/ceph-client/commit/74457512d7e3af8a1b0791effa1a04981f9eb0c5
+https://github.com/ceph/ceph-client/commit/645d80a3458441e4f223cea5a3c6eca1735f7950
+https://github.com/ceph/ceph-client/commit/eb9b2ae6c7a28eacaaaf6c71ccc52d93ad2503b4
+
+fs
+==
+
+ext4
+NB: fixed earlier by Dan Carpenter
+	http://git.kernel.org/linus/f85b287a
+
+ext4
+http://git.kernel.org/linus/d50f2ab6f050311dbf7b8f5501b25f0bf64a439b
+http://patchwork.ozlabs.org/patch/133205/
+CVE-2009-4307
+SA48645: https://secunia.com/advisories/48645/
+CVE-2012-2100 https://bugzilla.redhat.com/show_bug.cgi?id=809687
+
+ext4
+http://git.kernel.org/?p=linux/kernel/git/tytso/ext4.git;a=commitdiff;h=967ac8af4475ce45474800709b12137aa7634c77
+
+
+nilfs2
+http://git.kernel.org/linus/481fe17e
+https://lkml.org/lkml/2011/11/30/435
+
+http://git.kernel.org/linus/1ecd3c7ea76488c63b4b0a2561fd7eaf96cc8028
+https://lkml.org/lkml/2012/2/3/216
+
+http://git.kernel.org/linus/3d777a64066f3b9db8a94834aaed6a9cf09808fd
+https://lkml.org/lkml/2012/2/20/408
+
+xfs
+http://git.kernel.org/linus/093019cf
+https://lkml.org/lkml/2011/12/12/490
+previous commit:
+	fa8b18ed
+CVE-2012-0038
+
+ceph (4)
+https://github.com/ceph/ceph-client/commit/6ed751ba1858344c1acb2635a16840fab2a36b80
+http://git.kernel.org/linus/32852a81bccd9e3d1953b894966393d1b546576d
+https://github.com/ceph/ceph-client/commit/08febfc92d5292bab5126ea09d83a021fb31e2c1
+http://git.kernel.org/linus/76aa542fb90e3e91edb1146d10ca7cf2cae8e7e9
+https://github.com/ceph/ceph-client/commit/81eecf748343a23cc9c441a796926708fdb10482
+http://git.kernel.org/linus/810339ec2fae5cbd0164b8acde7fb65652755864
+https://github.com/ceph/ceph-client/commit/07fd42934a53b8486709f7f866346a9e4bb6d5ce
+http://git.kernel.org/linus/80834312a4da1405a9bc788313c67643de6fcb4c
+
+jffs2 (1)
+http://git.kernel.org/linus/7c80c352331a27cf0584f1701ed3a003984985f0
+
+NOT A FIX
+http://git.kernel.org/linus/b6778fd7812d877abdbc78b9b2d4304150b2ce05
+
+
+sound
+=====
+
+format
+http://git.kernel.org/linus/4fa0e81b83503900be277e6273a79651b375e288
+https://lkml.org/lkml/2012/1/4/215
+
+quirks
+http://git.kernel.org/linus/8866f405efd4171f9d9c91901d2dd02f01bacb60
+
+
+mm
+==
+
+vmscan
+https://lkml.org/lkml/2011/12/1/88
+NB: fixed earlier by Konstantin Khlebnikov
+	http://git.kernel.org/linus/635697c6
+
+
+kernel
+======
+
+audit
+http://git.kernel.org/linus/5afb8a3f96573f7ea018abb768f5b6ebe1a6c1a4
+
+
+misc
+====
+
+kmalloc_array
+http://git.kernel.org/linus/a8203725dfded5c1f79dca3368a4a273e24b59bb
+[doc]
+http://git.kernel.org/15837294d4ce717f69942f7366e99d4d1d3d9923
+
+SIZE_MAX
+http://git.kernel.org/linus/a3860c1c5dd1137db23d7786d284939c5761d517

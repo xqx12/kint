@@ -1,0 +1,85 @@
+#!/usr/bin/env python
+
+from email.utils import parsedate_tz, mktime_tz
+from datetime import datetime
+import json
+import os, os.path
+import re
+import sys
+
+lineno = re.compile(r"#\s+\d+\s+\"([^\"]+)\"")
+comment = re.compile(r"/\*\s*(\w+)\s*:\s*([^\*]+)\s*\*/")
+
+items = []
+files = set()
+for name in sys.argv[1:]:
+	sys.stderr.write("Reading " + name + "...\n")
+	id = os.path.splitext(os.path.basename(name))[0]
+	id = '-'.join(["CVE"] + id.split('-')[1:])
+	item = {"label": id, "type": "CVE"}
+	for line in open(name):
+		m = lineno.match(line)
+		if m:
+			filename = m.group(1)
+			files.add(filename)
+			item.setdefault("files", []).append(filename)
+			continue
+		m = comment.match(line)
+		if m:
+			assert m.group(1) not in item
+			item[m.group(1)] = m.group(2)
+	# shorten commit id
+	if "commit" in item:
+		item["commit"] = item["commit"][0:8]
+	# convert to iso format
+	if "date" in item:
+		item["date"] = datetime.fromtimestamp(mktime_tz(parsedate_tz(item["date"]))).isoformat()
+	# extract vulnerability information
+	basename = os.path.splitext(name)[0]
+	for ext in [".a.exp", ".a32.exp", ".a64.exp"]:
+		try:
+			exp = basename + ext;
+			traps = [line.split()[1] for line in open(exp)]
+			if traps:
+				item.setdefault("trap", []).extend(traps)
+			arch = item.setdefault("arch", [])
+			if ext == ".a32.exp":
+				arch.append("32")
+			elif ext == ".a64.exp":
+				arch.append("64")
+			else:
+				arch.extend(["32", "64"])
+		except IOError:
+			pass
+	# unify trap
+	if "trap" in item:
+		item["trap"] = list(set(item["trap"]))
+	# xfail
+	try:
+		xfail = open(basename + ".xfail").read().strip()
+		item["xfail"] = xfail
+	except:
+		pass
+	# yfail
+	try:
+		yfail = open(basename + ".yfail").read().strip()
+		item["yfail"] = yfail
+	except:
+		pass
+
+	items.append(item)
+
+for f in files:
+	item = {"label": f, "type": "File"}
+	subsystem = f.split(os.sep)[0]
+	#if subsystem in ["kernel"]:
+	#	subsystem = "core"
+	item["subsystem"] = subsystem
+	items.append(item)
+
+data = {
+	"items": items,
+	"types": {"CVE": {"label": "Vulnerability", "pluralLabel": "Vulnerabilities"}},
+	"properties": {"files": {"valueType": "item"}, "date": {"valueType": "date"}}
+}
+json.dump(data, sys.stdout, indent=2)

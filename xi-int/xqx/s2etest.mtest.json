@@ -1,0 +1,17 @@
+{ "items": [
+  {
+    "argv": "(%nbuf, 2)",
+    "block": "if.else4.split",
+    "column": "12",
+    "cond": "(benchmark notroot39\n:logic QF_BV\n:extrafuns ((%nbuf BitVec[32]))\n:formula\n(let (?e1 bv0[1])\n(let (?e34 (extract[31:31] %nbuf))\n(let (?e35 (concat ?e1 %nbuf))\n(let (?e36 bv2[33])\n(let (?e37 (bvmul ?e35 ?e36))\n(let (?e38 (extract[32:32] ?e37))\n(let (?e39 (bvand (bvnot ?e34) (bvnot ?e38)))\n(not (= (bvnot ?e39) bv0[1]))\n))))))))\n",
+    "directory": "/home/xqx/kint/xi-int/xqx",
+    "file": "s2etest.c",
+    "function": "mtest",
+    "guard": "(benchmark root44\n:logic QF_BV\n:extrafuns ((%nbuf BitVec[32]))\n:formula\n(let (?e40 bv0[32])\n(let (?e41 (ite (= %nbuf ?e40) bv1[1] bv0[1]))\n(let (?e42 bv4294967284[32])\n(let (?e43 (ite (= %nbuf (bvnot ?e42)) bv1[1] bv0[1]))\n(let (?e44 (bvand (bvnot ?e41) (bvnot ?e43)))\n(not (= ?e44 bv0[1]))\n))))))\n",
+    "invariant": "",
+    "line": "31",
+    "model": "",
+    "status": "sat",
+    "trap": "umul.i32"
+  }
+]}

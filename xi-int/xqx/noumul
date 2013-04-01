@@ -1,0 +1,71 @@
+CallInst:   call void @trap.umul.i32(i32 %nbuf, i32 2), !dbg !31
+Name: umul.i32TrapSat.cc:489 
+TrapLib::run 
+(benchmark notroot39
+:logic QF_BV
+:extrafuns ((%nbuf BitVec[32]))
+:formula
+(let (?e1 bv0[1])
+(let (?e34 (extract[31:31] %nbuf))
+(let (?e35 (concat ?e1 %nbuf))
+(let (?e36 bv2[33])
+(let (?e37 (bvmul ?e35 ?e36))
+(let (?e38 (extract[32:32] ?e37))
+(let (?e39 (bvand (bvnot ?e34) (bvnot ?e38)))
+(not (= (bvnot ?e39) bv0[1]))
+))))))))
+TrapLib::run 
+Item: ------------------------
+Item[cond]:----- 
+ (benchmark notroot39
+:logic QF_BV
+:extrafuns ((%nbuf BitVec[32]))
+:formula
+(let (?e1 bv0[1])
+(let (?e34 (extract[31:31] %nbuf))
+(let (?e35 (concat ?e1 %nbuf))
+(let (?e36 bv2[33])
+(let (?e37 (bvmul ?e35 ?e36))
+(let (?e38 (extract[32:32] ?e37))
+(let (?e39 (bvand (bvnot ?e34) (bvnot ?e38)))
+(not (= (bvnot ?e39) bv0[1]))
+))))))))
+
+Item[trap]:---- 
+ umul.i32
+Item[function]:----- 
+ mtest
+Item[block]:---- 
+ if.else7.split
+Item[guard]:---- 
+ (benchmark root47
+:logic QF_BV
+:extrafuns ((%nbuf BitVec[32]))
+:formula
+(let (?e40 bv2147483648[32])
+(let (?e41 (ite (bvult (bvnot ?e40) %nbuf) bv1[1] bv0[1]))
+(let (?e42 bv0[32])
+(let (?e43 (ite (= %nbuf ?e42) bv1[1] bv0[1]))
+(let (?e44 bv4294967284[32])
+(let (?e45 (ite (= %nbuf (bvnot ?e44)) bv1[1] bv0[1]))
+(let (?e46 (bvand (bvnot ?e43) (bvnot ?e45)))
+(let (?e47 (bvand (bvnot ?e41) ?e46))
+(not (= ?e47 bv0[1]))
+)))))))))
+
+Item[invariant]:---- 
+ 
+Item[model]:---- 
+ 
+Item[status]:---- 
+ unsat
+CallInst: printing a <null> value
+
+CallInst: printing a <null> value
+
+CallInst: printing a <null> value
+
+CallInst:   %call10 = call i32 (...)* @cprintf(i8* getelementptr inbounds ([10 x i8]* @.str2, i32 0, i32 0)), !dbg !32
+Name: TrapSat.cc:489 
+CallInst: printing a <null> value
+

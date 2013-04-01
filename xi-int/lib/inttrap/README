@@ -1,0 +1,6 @@
+Libinttrap provides checks of integer overflows.  It is intended to be
+linked for static analysis.
+
+The major goal of the library is high portability.  The generated IR
+should be the same across major architectures, such as i386 and x86_64,
+so that it serves as a single `universal binary' for linking.

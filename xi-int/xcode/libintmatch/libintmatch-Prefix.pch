@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'libintmatch' target in the 'libintmatch' project
+//
+
+#include <llvm/Pass.h>
+#include <llvm/Analysis/DebugInfo.h>
+#include <llvm/Analysis/ScalarEvolution.h>
+#include <llvm/Support/InstIterator.h>
+#include <llvm/Support/raw_ostream.h>
