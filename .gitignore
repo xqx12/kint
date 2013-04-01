@@ -22,6 +22,11 @@
 *.gz
 
 #build dir
+/xi-int/build/
+/xi-int/build-aux/
+/xi-int/llvm/
+/xi-int/autom4te.cache/
+/xi-int/tests/
 /llvm/
 /kint/
 
